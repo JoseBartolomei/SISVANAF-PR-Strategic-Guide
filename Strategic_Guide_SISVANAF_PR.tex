@@ -1,0 +1,2253 @@
+\documentclass[12pt,letterpaper]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% packages
+%\usepackage[latin1]{inputenc}
+%\usepackage{draftwatermark}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{titlepic}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{blindtext}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[singlelinecheck=off]{caption}
+\usepackage{ragged2e}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage[none]{hyphenat}
+\usepackage{floatrow}
+\floatsetup[table]{style=plaintop}
+\raggedright{}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true, % set true if you want colored linkgs
+    citecolor=black,
+    filecolor=black,
+    linktoc = all,  %set to all if you want both sections and subsections linked
+    linkcolor = blue, %choose some color if you want links to stand out
+    urlcolor = black
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% new comands
+\renewcommand\thesection{\arabic{section}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Jos\'{e} A. Bartolomei-D\'{i}az, PhD \\
+President\\ Outcome Project\\
+e-mail: jose.bartolomei@outcomeproject.com\\
+\\
+Jarymar Arana, BS\\
+Research Assistant \\ Outcome Project\\            
+e-mail: jarymar.arana@outcomeproject.com}
+
+
+\title{\textbf{The Food, Nutrition and Physical Activity Surveillance System of Puerto Rico Strategic Guide}}
+\titlepic{
+\mbox{\subfigure{\includegraphics[width=90mm, height=35mm, page=1]{/media/truecrypt2/ORP2/Logos/CAN-PR.png}}\quad
+% \subfigure{\includegraphics[width=80mm,height=22.5mm]{/media/truecrypt2/ORP2/Logos/Logo_PRAP_Ingles.jpg}}
+}
+}
+
+\begin{document}
+\maketitle% Print the title
+
+\doublespacing
+\tableofcontents
+\listoftables
+
+\newpage
+\section{Introduction}
+
+On January 8, 1999, the Senate of Puerto Rico and the House of Representatives of the Commonwealth of Puerto Rico approved the Organic Law no. 10 that created the Puerto Rico Food and Nutrition Commission (CANPR by its Spanish acronym). The main objective of the law was to establish an agenda to address one of the century's biggest threats to society in Puerto Rico: the prevalence of diseases related to inadequate dietary habits, poor nutritional food selection, and access and availability of nutritious food. To deal with this public health threat, Law no. 10 mandates that CANPR accomplish two main goals:
+
+\begin{enumerate}
+\item Coordinate the adequate use of available economic and human resources in collaboration with diverse private and governmental agencies.
+
+\item Improve the nutritional and health conditions of the population in Puerto Rico to enhance their overall well-being.
+\end{enumerate}
+
+To work toward the stated goals, Article no. 6 of Law no. 10 appoints CANPR the responsibility to establish a surveillance system with the purpose to: 
+\begin{itemize}
+\item Identify health conditions related to inadequate dietary, nutritional and physical activity habits.
+\item Advise in the identification of access and availability of foods with high nutritional value to improve the nutritional patterns of the population in Puerto Rico.
+\end{itemize} 
+
+Consequently, efforts were made to implement a Food, Nutrition and Physical Activity Surveillance System in Puerto Rico (SIVANAF-PR by its Spanish acronym). Nevertheless, it was not until the year 2011 that the CANPR were granted public funds to commence the design of the mandated surveillance system.
+
+
+\subsection{SISVANAF-PR Strategic Guide Objective}
+
+The objective of the strategic guide is to provide to the Puerto Rico Food and Nutrition Commission (CANPR by its Spanish acronym) a protocol for the development, implementation and sustainability of the Food, Nutrition and Physical Activity Surveillance System of Puerto Rico (SISVANAF-PR by its Spanish acronym).
+
+\subsection{Organization of the SISVANF-PR Strategic Guide}
+
+This Guide is structured by several sections. These sections contain what are known as the purpose and operation of a surveillance system. As a whole, its organization, provides a working scheme for the development, implementation and sustainability of the SISVANAF-PR. Every section incorporates \textbf{Outcome Project's} insight in developing surveillance systems, guidance from the Centers for Diseases Control and Prevention surveillance evaluation documentation, and scientific literature review related to epidemiological surveillance, biostatistics, computational statistics, informatics, food security, health related effects, and dietary and physical activity habits.
+
+The description of the components of this surveillance system include discussions related to public health concerns, justification for the development of a SISVANAF and informatics issues such as software's, standards of data format and coding, adherence to confidentiality, security standards and data analysis.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{SISVANAF-PR Mission, Goals \& Users}
+
+\subsection{Mission}
+The mission of the Food, Nutrition and Physical Activity Surveillance System of Puerto Rico (SISVANAF-PR) is to systematically and continuously collect, analyze, interpret and disseminate data related to dietary and physical activity habits, the availability of nutritious food, and the development of nutrition and physical activities health related diseases in Puerto Rico. 
+
+\subsection{Goals}
+The following are the goals of the SISVANAF-PR.
+
+\begin{itemize}
+
+	\item Estimate the magnitude and risk of dietary habits in Puerto Rico to recommend strategies designed to guide diets in Puerto Rico.
+
+	\item Estimate the availability and access of nutritious food in Puerto Rico to guide the development of strategies to secure its readiness.
+
+\item Estimate the magnitude of food security access indicators.  
+
+\item Estimate the magnitude and risk of diseases related to inadequate dietary and physical activity habits in Puerto Rico to recommend strategies for primary, secondary and tertiary health prevention.
+
+\item Document the distribution of the surveyed indicators within the scope of time, place and subject.
+
+\item Evaluate current strategies and public policy with the surveillance information and recommend new policy and strategies accordingly.
+
+\item Detect changes in the population's dietary habits, nutritious food availability and related diseases in order to guide population intervention and public policy strategies.
+
+\item Identify research needs related to dietary and physical activity habits, availability and access of nutritious food and health related diseases.
+
+	\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Policies}
+
+Puerto Rico has adopted a series of Public Policies to improve the population quality of life by reducing the risk of adverse health events related to dietary habits.  This section presents public policies initiatives in Puerto Rico guided by the CAN-PR.
+
+\subsubsection{Puerto Rico Dietary Guidelines}
+
+The Puerto Rico Dietary Guideline provides a set of concepts and recommendations grounded in the emerging scientific evidence to guide people on how to maintain a healthy weight and reduce the risk of chronic diseases such as cardiovascular, hypertension, diabetes, cancer and osteoporosis, using a balanced and integrating physical activity as part of their lifestyle diet. The Guideline includes recommendations for adults and children about food and components to reduce and nutrients that should be included in the daily diet for a healthy life.
+
+The Puerto Rico Dietary Guideline serve as an educational tool with a set of easy recommendations to help consumers translate knowledge about food nutritional values and components of dietary guidelines into their daily lives. It presents the food groups to be consumed daily in units and common measures, such as cups and ounces. In addition, presents educational messages to the general public about the health benefits obtained with simple changes in diet and physical activity.  The Guideline is based on findings from studies of nutritional content and food patterns in Puerto Rico. Its scientific and conceptual basis take into consideration the research generated by My Pyramid and My Plate educational models developed in 2005 and 2010 respectively, by the Department of Agriculture. \cite{GuiaAlimentariaPR}
+
+\subsubsection{``Mi Plato para un Puerto Rico Saludable"}
+
+On June 2, 2011, First Lady Michelle Obama and USDA Secretary Tom Vilsack released the federal government’s new food icon, MyPlate, to serve as a reminder to consumers make healthier food choices. My Plate is a new generation icon with the intent to prompt the population to think about building a healthy plate at meal times and to seek more information to help them do that by going to ChooseMyPlate.gov. The new MyPlate icon emphasizes the fruit, vegetable, grains, protein foods, and dairy groups. Later in 2011, Mi Plato was launched as the Spanish-language version of My Plate.
+
+Once the Department of Agriculture (USDA) published the Report of the Advisory Committee on the Dietary Guidelines for Americans 2010, the Food and Nutrition Commission of Puerto Rico, appointed an Expert Panel to update and harmonize the concepts and recommendations to be included in the revision of the Dietary Guideline for Puerto Rico including MyPlate icon.
+
+The MyPlate's adaptation for Puerto Rico ("Mi Plato para un Puerto Rico Saludable") main purpose is to adapt the MyPlate icon to a tool that represents the culture and tradition of eating foods of Puerto Ricans. The new icon facilitate the implementation of dietary recommendations in selecting foods combined together with practical suggestions for educational population. Two important elements, water and physical activity are included in this educational tool. \cite{MiPlatoPR}
+
+\subsubsection{2020 PR Healthy People Objectives}
+
+The Healthy People initiative (HPi) provides science-based, 10-year national objectives for improving the health of all Americans. For 3 decades, Healthy People has established benchmarks and monitored progress over time in order to:
+   \begin{itemize}
+        \item Encourage collaborations across communities and sectors.
+        \item Empower individuals toward making informed health decisions.
+        \item Measure the impact of prevention activities.
+	\end{itemize}
+
+The vision of HPi is a society in which all people live long, healthy lives. It mission toward the 2020 is to: (1) Identify nationwide health improvement priorities; (2) increase public awareness and understanding of the determinants of health, disease, and disability and the opportunities for progress; (3) provide measurable objectives and goals that are applicable at the national, State, and local levels; (4) engage multiple sectors to take actions to strengthen policies and improve practices that are driven by the best available evidence and knowledge; and (5) identify critical research, evaluation, and data collection needs.
+
+In Puerto Rico, the CANPR is the Nutrition and Physical Activity leader of the Healthy People 2020 initiative. The national goal of this section is to promote health and decrease chronic illness associated with lack of healthy eating habits and physical activity.  The CANPR were designated to survey and recommend toward achieving the the following objectives for Puerto Rico:
+ 
+ \begin{itemize}
+        \item Increase the proportion of adults who are at a healthy weight (BMI between 18.5 and 24.99).
+        \item Reduce the proportion of adults who are overweight, obese and have morbid obesity.
+        \item Increase the proportion of adults that consume five or more servings of vegetables and fruits per day.
+        \item Reduce the proportion of adolescents (9th-12th graders) that do not consume fruits during the past seven (7) days.
+        \item Reduce the proportion of adolescents (9th-12th graders) that do not consume vegetables during the past seven (7) days.
+        \item Increase the proportion of adults who engage in physical activity.
+        \item Increase the proportion of adolescents (9th-12th graders) that engage in physical activity at least 60 minutes per day during the past week.
+	\end{itemize}
+
+As leaders, the CANPR have allies conformed in committees which organized and direct efforts toward achieving the stated objectives. The SISVANAF-PR will serve as the tool to measure changes across time and pin-point those groups whose need more attention.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Surveillance System Users}
+
+The members of CANPR and its advisory committees are the primary users of the SISVANAF-PR information. By law they need to design and recommend public policy strategies.  Moreover, the SISVANAF-PR users can range from the general population seeking local information, to scientists designing and proposing research, to policy makers guiding and implementing laws for the benefit of the population in Puerto Rico.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{SISVANAF-PR Background}
+\subsection{Definition}
+
+A surveillance system is, as defined by Miguel Porta in the dictionary of epidemiology, ``a systematic and continuous collection, analysis, and interpretation of data, closely integrated with the timely and coherent dissemination of surveillance results and assessment to those who have the right to know so that action can be taken. It is an essential feature of epidemiological and public health practice. The final phase in the surveillance chain is the application of information to health promotion and to disease prevention and control. A surveillance system includes a functional capacity for data collection, analysis, and dissemination linked to public health programs." \cite{porta2008dictionary}.
+
+It is important to understand that a surveillance system is a tool used to estimate the health status and behavior of the population \cite{berkelman2009public}. This tool provides a continuous analysis, interpretation, and feedback of systematically collected data. The objective of these tasks are to observe trends in time, place, and person to observe or anticipate changes which allow organizations to delineate and execute appropriate action, including investigative or control measures that can be taken \cite{porta2008dictionary, thacker1998public}.
+
+The development and sustainability of a SISVANAF-PR is of such importance that currently the United States of America invests millions of dollars in public funds to design and execute an array of surveys that provide useful data to measure the prevalence of health risk behaviors related to nutrition, physical activity and food security to address important public health issues. One of them is the Behavioral Risk Factor Surveillance System (BRFSS), administered by the U.S. Center for Disease Control and Prevention, which measures health prevalence indicators such as body mass index (BMI), as well as dietary and physical activity behaviors for adults ages 18 and older. These surveys measure specific populations because of a diverse range of necessities and difficulties in data collection. For example the Youth Risk Behavior Surveillance System (YRBSS), administered by the U.S. Center for Disease Control and Prevention, measures dietary and physical activity behaviors for high school students below 18 years old. On the other hand, the Pediatric and Pregnancy Nutrition Surveillance System (PedNSS), administered by the U.S. Center for Disease Control and Prevention, monitors the nutritional status of low-income children participating in federally funded maternal and child health programs. Data on birth-weight, anemia, short stature, underweight, overweight, and obesity are collected for children who attend public health clinics for routine care, nutrition education, and supplemental nutrition assistance. The U.S. Current Population Survey (CPS), administered by the U.S. Census, includes a Food Security supplemental survey that measures food access for households with and without children, and severity of food insecurity \cite{USfs2012}.
+
+Increasingly, top managers in ministries of health and finance from developing countries and donor agencies are recognizing that data from effective surveillance systems are useful for targeting resources and evaluating programs \cite{jamison2006disease}. Latin American countries and other parts of the world have formed coalitions to deal with nutrition, food security and physical activity related health issues. From these concentrated efforts, institutions have established surveillance systems, research, and policy recommendations to reduce the prevalence of nutrition and physical activity related illness, as well as to improve food security in vulnerable areas. In Central America, a coalition named \textit{Instituto de Nutrici\'on de Centro America y Panama} created a Nutrition and Food Security Surveillance System which measures the state of food security and nutrition in Central American countries, Panama and the Dominican Republic. Globally, the World Health Organization (WHO) measures food security, nutrition and physical activity health related disease prevalence. Among WHO surveys the Vitamin and Mineral Nutrition Information System (VMNIS) monitors micro-nutrient deficiencies around the world. The VMNIS Micro-nutrients Database provides updated information on anemia, vitamin A and iodine nutritional status globally. Additionally, the United Nations Food and Agriculture Organization produces and collects reports on global food security, hunger, and related factors such as global food prices.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection {Components}
+
+Given the global variety of surveillance systems created to address nutrition, physical activity and food security related disease prevalence, there are abundant examples of different ways that these surveillance systems can be organized. The following sections will describe each component of Puerto Rico's SISVANAF and provide justification for including that component in the SISVANAF-PR. 
+
+SISVANAF-PR can be stratified in four components or domains, each of them with a specific purpose (Nutritional Surveillance, Food Security Surveillance, Physical Activity Surveillance and Nutrition and Physical Activity Health Related Surveillance). This section will provide a description for each SISVANAF-PR component.
+
+The Nutritional Surveillance component of SISVANAF-PR measures dietary habits among adults and high school students. It can find information about fruit and vegetable consumption through indicators that include survey questions assessing the quantity and quality of food consumed by respondents. Other questions ask about consumption of beans and lentils, dark green vegetables, orange colored vegetables, green salad, potatoes, carrots and other vegetable consumption. Additional indicators measure beverage consumption such as the consumption of 100\% fruit juice, sweetened beverages, and soda consumption to account for the added sugars in participants' diets. Finally, indicators are included to measure milk and breakfast consumption and calorie information use prevalence.
+
+The Food Security Surveillance component of SISVANAF-PR includes environmental food accessibility factors, which have proven to be important when assessing food security at a household and community level \cite{story2008creating}. Food insecurity considers multiple factors of financial and physical access to enough nutritious food at all times for all household members to live healthy lives \cite{bickel2000guide}. Food security health indicators include: food insecure households (with and without children), access to farmer's markets that accept coupons from supplemental nutrition assistance programs, proximity to healthy food retailers, percentage of cropland acreage harvested for fruits and vegetables, and percent of locally produced and consumed fruits and vegetables. 
+
+The Physical Activity Surveillance component of the SISVANAF-PR measures physical activity behaviors among adults and high school students. These indicators derive information from surveys that identify the amount of time spent doing physical activity that meets national guidelines. Other indicators identify the average time spent watching television (for adults and high school students), and video game usage (for high school students only). Finally, indicators identify participation in team sports and physical education (for high school students only). 
+
+Lastly, Nutrition and Physical Activity Health Related Surveillance component of SISVANAF-PR includes health indicators (non communicable diseases) linked to dietary and physical activity practices or associated with food security. These include birth-weight, short stature, body mass index (BMI), anemia, cancer, diabetes, cerebro-vascular and cardio-vascular disease among others. Surveillance of those non communicable condition are not an easy task but public health scientists and professionals have designed surveys and established case definitions to estimate those conditions.  For example; birth weight indicators identify prevalence of children born with low birth weight (\textless 2500 grams) or high birth weight (\textgreater 4000 grams) \cite{PedNSS}. BMI indicators measure the prevalence of population that fall under the underweight, overweight, or obese categories based on reported weight, age and stature. The anemia indicator measures the prevalence of anemia among children less than five years of age using laboratory results. \cite{PedNSS}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{Benefits}
+
+According to CDC Surveillance System Guidelines, part of surveillance system design requires that each component is defined and justified\cite{german2001updated}. Justification for surveillance system components (health indicators) are based on several factors including frequency and severity of public health problems, public health cost impacts, prevention (ability to provide policy interventions), and disparities associated with the health issue \cite{german2001updated}. The purpose of this section is to provide evidence-based justification for the importance of implementing the SISVANAF-PR.
+
+The following information presented in this section includes data derived from surveillance systems established and maintained by the U.S. Centers for Disease Control and Prevention. The results for the Puerto Rico population were obtained from the following surveys: BRFSS (2009-2012) found on (\url{http://apps.nccd.cdc.gov/brfss/}), YRBS (2011) found on (\url{http://apps.nccd.cdc.gov/youthonline/App/Default.aspx}), and PedNSS (2011) found on (\url{http://www.cdc.gov/pedNSS/pednss_tables/html/pednss_national_table6.htm}).
+
+Unhealthy dietary and physical activity habits, as well as low food security have been linked to the prevalence of chronic illness worldwide. Puerto Rico currently faces a high prevalence of chronic conditions that can be better understood and addressed by maintaining SISVANAF-PR. In the most recent Behavioral Risk Factor Surveillance System (BRFSS) surveys
+ (http://www.cdc.gov/brfss/data\_tools.htm), Puerto Rico ranked highest among U.S. states and territories in rate of diabetes, at 16.4\% in 2012. For the same survey Puerto Rico also ranked high in rates of obesity (26.3\%), overweight (39.8\%), high blood pressure (36.8\%) and high cholesterol (38.2\% in 2011). Given the high prevalence of nutrition and physical activity habit health related chronic illnesses, the SISVANAF-PR design must provide insight to set up strategies aimed to improve quality of life for Puerto Rico's population. Literature indicates that continuous monitoring of surveillance measures of health risks allow the opportunity to identify strategies for intervention and prevention \cite{german2001updated}. In addition, SISVANAF provides a guide to develop informed public policy that could help reduce maladies such as malnutrition, obesity, diabetes, high blood pressure, high cholesterol and other health related factors affecting the population of Puerto Rico.
+
+\subsubsection{Importance of Nutrition Surveillance}
+Creating a nutrition surveillance system is important because it can help identify prevalence of malnutrition (under-nutrition and over-nutrition) and may help explain links to health related effects. Malnutrition has been attributed to negative effects on childhood development through compromised immune health, physical capabilities and learning abilities and has been linked to stunted growth \cite{brown1996malnutrition, martorell1999nature}. Due to inadequate dietary habits and access, children worldwide who suffer from vitamin A deficiency are at great risk for blindness, which is preventable with adequate intake of fruits, vegetables, and enriched foods containing vitamin A \cite{sommer1996vitamin}. In addition to problems of vitamin deficiency and under-nutrition, in many cases, prevalence of over-nutrition leads to chronic health impacts such as obesity and diabetes, as will be further explained in the section on health related surveillance \cite{hawkes2006uneven, wang2006worldwide, wing2001behavioral}.
+
+Puerto Rico's dietary habits currently do not meet recommended guidelines. The \textit{Gu\'{i}a Alimentaria Para Puerto Rico} (Nutritional Guide for Puerto Rico) and \textit{MiPlato Para un Puerto Rico Saludable} (MyPlate for a Healthy Puerto Rico) are the new recommended guidelines developed by the Puerto Rico Food and Nutrition Commission (CANPR). They include recommendations for consumption of each of the food groups \cite{GuiaAlimentariaPR}. The Alimentary Guide for Puerto Rico suggests that adults consume at least 2 servings of fruits and 2.5 cups of vegetables every day, and at least 5 servings of fruits, 2 servings of vegetables per day for children under 18 \cite{GuiaAlimentariaPR}. Studies suggest that consuming recommended servings of fruits and vegetable per day is associated with a reduced risk of stroke and cardiovascular disease \cite{bazzano2002fruit, he2006fruit}. There is moderate evidence to suggest that an increased variety of consumption of fruits and vegetables can decrease the risks of coronary heart disease, according to a study in the adult population of Puerto Rico \cite{bhupathiraju2011greater}. In addition, studies suggest that replacing calorie rich foods with fruits and vegetables could promote healthy weight \cite{rolls2004can}. 
+
+An overwhelming majority of respondents in a 2009 BRFSS PR survey, 82.3 percent, consumed less than 5 fruits or vegetables per day. This means that in Puerto Rico a majority of respondents who are adults are not consuming enough fruits and vegetables to meet recommended guidelines. Among high school students in Puerto Rico who responded to 2011 YRBS survey questions, 87.7\% ate vegetables less than three times daily, and 73.8\% ate fruit or drank 100\% of fruit juice less than three times per day. 19.1\% of High School students did not eat any vegetables and 27.6\% did not eat any fruit within the week (12.5\% did not eat any fruit or drink 100\% fruit juice within the week).
+
+Sugar-sweetened beverages such as soda or other sugar-sweetened drinks are a source of added sugars and increased caloric intake with poor nutritional value. Risk factors such as obesity and overweight and Type 2 diabetes are associated with consumption of sugar sweetened beverages \cite{vartanian2007effects}. In addition, dental decay and decreased bone density has been associated with consumption of sugar-sweetened beverages among youth \cite{whiting2001relationship, tahmassebi2006soft}. An overwhelming majority of high school students who responded to the 2011 PR YRBS survey (86.4\%) drank a can, bottle or glass of soda during the week, 34.4\% drank a can, bottle or glass of soda one or more times per day during the last week, 21.2\% drank a can, bottle or glass of soda three or more times per day during the last week. These statistics indicate that many high school students in Puerto Rico are not meeting nutritional guidelines and may be at risk for health related outcomes of these dietary habits. Nutritional Surveillance will monitor Puerto Rico's dietary habits and help assess and introduce intervention strategies.
+
+\subsubsection{Importance of Food Security Surveillance}
+Creating and maintaining a Food Security Surveillance System could provide an important measure of the ability of a household and community to secure sufficient nutritious food and better health outcomes. In addition, food security surveillance could help policy makers understand the effectiveness of food assistance programs and identify areas of great food security risk where intervention efforts, funding and infrastructure development can be focused \cite{bickel2000guide}. The following section will describe health problems associated with food in-security and justify why food security surveillance is necessary. 
+
+Food insecurity, or lack of secure access to sufficient healthy food choices at all times, is a problem that greatly affects many households. Some households and communities are more food insecure than others and some individuals may be more vulnerable than others to food insecurity. According to the latest U.S. National Current Population Survey (CPS) Food Security study, food insecurity was most prevalent in 34.5\% of low-income households (according to 2012 federal poverty standards), 35.4\% of single female-headed households with children, and 20\% of households with children [source].
+
+Food insecurity has several health impacts for adults and children including the following:
+\begin{itemize}
+\item\textbf{Adult Physical Health:} Food in-security increases the risk of diabetes \cite{seligman2007food}, and is linked to the risk of developing other chronic illnesses such as hypertension and coronary heart disease \cite{seligman2010food}.
+\item\textbf{Maternal Health:} Food in-security among women who are pregnant is associated with higher risks of birth complications and low birth weight due to decrease in necessary nutrients\cite{tarasuk2001household}. Some birth defects may also result due to diet lacking sufficient folate \cite{bailey2010folate}.
+\item\textbf{Child Health Development:} Food in-security in households with children has been linked to increased risk of several chronic conditions such as anemia, and oral health problems \cite{muirhead2009oral, eicher2009food}. Children born to food insecure mothers are at increased risk for delayed development, low birth weight, and learning difficulties \cite{cook2008brief, skalicky2006child, jyoti2005food, cook2004food}. In addition, one study shows that infants (below 36 months) of food insecure households were more than twice as likely to have "fair to poor" health outcomes, and more than 33\% higher chance of being hospitalized \cite{cook2004food}. One report measuring Child Health Related Quality of Life and its relation to household food security concluded that "Children who live in food insecure households have poorer HRQOL. Food security should be considered an important risk factor for child health" \cite{casey2005child}.
+\item\textbf{Obesity:}  Studies have indicated an association between food insecurity and obesity and overweight, especially among food insecure women and children \cite{bronte2007food, martin2007food, wilde2006individual, casey2006association, alaimo2001low, townsend2001food}. This phenomenon could be explained by the lack of access to nutrient rich foods, where a household may opt to spend their limited resources on less expensive, higher calorie, lower nutrient foods, in order to avoid hunger \cite{drewnowski2004poverty}. 
+\end{itemize}
+
+Some studies show that Puerto Rico may be particularly vulnerable to food insecurity due to geographic and economic factors \cite{prfsgeographic}. An assessment of food security for different regions in Puerto Rico concluded that some areas of Puerto Rico were more vulnerable to food insecurity because of their geographic location, among other factors \cite{prfsgeographic}. Due to a significant proportion of imported food consumption, among other economic and climate risk factors, it is imperative to develop strategies to improve the state of Puerto Rico's food security. Several factors indicate Puerto Rico's risks of food insecurity. Availability: Approximately only 18\% of food consumed in Puerto Rico are produced locally \cite{2010PRAgricultura}. Local production of fruits and vegetables are an important factor to consider as it has the potential to affect the availability of fruits and vegetables in local retailers and improve access of nutritious food for the population in Puerto Rico to meet nutritional guidelines \cite{story2008creating}. Accessibility: Approximately more than half of the population in Puerto Rico have access to enough food because they have access to nutrition assistance programs such as the Supplemental Nutrition Assistance Program (PAN for its acronym in Spanish), Women, Infants and Children Program (WIC), and/or use school free breakfast, lunch, or summer feeding programs. Because of the high prevalence of supplemental nutrition assistance use, it will be useful monitor indicators that assesses the availability of healthy food retailers and farmer's markets that accept WIC, PAN or other nutrition assistance programs \cite{story2008creating, fox2004effects, black2004special, dunifon2003influences, kendall1996relationship}.
+
+It can be inferred from these statistics that some of the population in Puerto Rico have less economic and geographic access to healthy food that will meet nutritional guidelines. Puerto Rico has high rates of obesity (26.3 percent), diabetes (16.4 percent), and other health outcomes that may correlate with a prevalence in food insecurity \cite{martin2007food, seligman2007food}. However, food security surveillance can help assess the extent and severity of food insecurity in Puerto Rico taking into account issues of nutritious food availability and the ability of households to access those healthy foods.
+
+\subsubsection{Importance of Physical Activity Surveillance}
+Physical Activity Surveillance is important to understand the prevalence of inadequate physical activity behaviors, to identify population at risk of developing health related diseases, and to guide policies that increase adequate physical activity according to recommended guidelines. Studies have shown that physical activity and inactivity have important health outcomes and implications. The World Health Organization (WHO) attributes physical inactivity to 6\% of deaths as the fourth leading factor of global deaths \cite{mathers2009global}. Physical inactivity has also been linked to "approximately 21\% to 25\% of breast and colon cancers, 27\% of diabetes and 30\% of ischemic heart disease burden," according to WHO estimates \cite{mathers2009global}. Adequate physical activity has been linked to reduced risks of becoming overweight, developing osteoporosis, some cancers, type 2 diabetes and cardiovascular disease \cite{healy2008objectively, kushi2006american, bassuk2005epidemiological, lifshitz2002reduction} .
+
+A substantial percent of the adult and adolescent population in Puerto Rico are not meeting national physical activity guidelines. The \textit{Gu\'{i}a Alimentaria Para Puerto Rico} (Nutritional Guide for Puerto Rico) recommends that to achieve optimal health benefits, adults should do at least 60 minutes of moderate intensity exercise or 20 minutes of vigorous intensity physical activity daily \cite{GuiaAlimentariaPR}. A substantial rate of respondents to the PR BRFSS 2010 survey were inactive, 42.3\% of respondents did not participate in any physical activity. In 2011, 91.5\% of respondents did not participate in enough aerobic and muscle strengthening exercises to meet guidelines. In 2009, 72.0\% of respondents did not exercise 30 or more minutes 5 or more days per week or do vigorous physical activity for 20 or more minutes, 3 or more days per week. Of adults surveyed for the PR BRFSS 2009 survey, a majority of respondents (86.3\%) did not participate in 20 or more minutes of vigorous physical activity 3 or more days per week. For youth, guidelines recommend at least 60 minutes of exercise per day \cite{GuiaAlimentariaPR}. According to PR YRBS 2011, 32.8\% or almost one third of high school respondents did not participate in at least 60 minutes of physical activity on any day of the week. These results reveal that a substantial amount, if not majority, of the adult and adolescent population of Puerto Rico are not meeting physical activity recommended guidelines.
+
+Another physical activity health indicator is the amount of time spent in front of a television or computer. \text{Gu\'{i}a Alimentaria Para Puerto Rico} recommends that youth reduce screen time spent in sedentary activities such as television viewing, playing electronic games, or using a computer other than for homework \cite{GuiaAlimentariaPR}. Excessive television viewing among youth is associated with increased risk of overweight and obesity \cite{salmon2006television}, as it is associated with less exercise and unhealthy eating patterns (consuming sugar sweetened beverages, fast food, and fewer fruits and vegetables) \cite{coon2001relationships}. Computer usage and video game playing are associated with physical inactivity among high school aged youth \cite{fotheringham2000computer}. According to the 2011 YRBS survey, more than one third of high school students in Puerto Rico (39.8\%) spent three or more hours per day watching television and 29.2\% used computers (not for school related reasons) three or more hours per day.
+
+Studies indicate that physical education classes may increase adolescent participation in physical activity and help high school students develop the knowledge, attitudes, and skills they need to engage in lifelong physical activity \cite{trudeau2005contribution, gordon2000determinants}. Over half (58.5\%) of high school students in Puerto Rico did not attend a physical education class in an average week, according to the PR YRBS 2011 survey. Studies have shown that "children involved in team sports tend to be more physically fit than their uninvolved peers and have greater participation in physical activity over time" \cite{weintraub2008team}. More than half (58.2\%) of respondents to the PR YRBS 2011 survey did not participate in a sports team during the last twelve months. A Physical Activity Surveillance component as part of a larger SISVANAF in Puerto Rico can help inform health outcome analysis and lead to improved assessment of policy measures to improve physical activity prevalence.
+
+\subsubsection{Importance of Nutrition \& Physical Activity Health Related Surveillance}
+Measuring health related effects of dietary habits, food security and physical activity can provide further insight into chronic health conditions. Health Related Surveillance can also help to provide an analysis of current state of disease prevalence, help measure progress of public health policy, and provide insights into chronic diseases related to the other surveillance components.
+
+An indicator of Health Related Surveillance is body mass index, accounting for the prevalence of underweight, overweight, and obesity. Several concerns of the prevalence of overweight and obesity are related to mortality and the prevalence of related chronic diseases such as diabetes, cancer, and heart disease. A study of mortality rates related to body mass index conducted in 2000 in the U.S. revealed that "obesity (BMI \textgreater 30) was associated with 111,909 excess deaths (95\% confidence interval) and underweight with 33,746 excess deaths (95\% CI)" \cite{flegal2005excess}. According to WHO, obesity and overweight have been linked to 44\% of diabetes cases, 23\% of ischemic heart disease cases and 7 to 41\% of certain cancers worldwide \cite{mathers2009global}. In Puerto Rico, a large number of the population is overweight or obese. The PR BRFSS 2012 survey reports that 37.8\% of respondents were overweight (25.0-29.9 BMI) and 28.4\% were obese (30.0-99.8 BMI). Among high school students in Puerto Rico who were surveyed in the YRBSS 2011, 15.1\% were overweight, and 11.8\% were obese. 
+
+Underweight, overweight and obesity may greatly affect a child's development \cite{black2008maternal}. According to the 2011 PR PedNSS survey, 4.6\% of children reported were underweight (ranked 43th of states and territories), and 16.7\% were obese (ranked 48th of states and territories). In Puerto Rico, children between 2 and 5 years old were reported as 16.9\% overweight and 18.0\% obese.
+
+Another indicator for Health Related Surveillance is short stature. Short stature, also referred to as low-length/height-for age or stunting, is used as an indicator of chronic malnutrition and it reflects the long-term health and nutritional history of a child \cite{world1995physical}. Short stature in children might be an indicator of poor nutrition and repeated incidences of infections \cite{black2008maternal, uauy2008nutrition, stephenson2000malnutrition, oberhelman1998correlations, stephenson1994helminth}. In some children, short stature may be related to factors such as lower birth weight or short parental stature. According to the 2011 PR PedNSS survey report, 10.8\% of children under five years were classified as short stature, ranking Puerto Rico as the 54th of the states and territories. 
+
+Anemia (low hemoglobin or low hematocrit) is an indicator of iron deficiency, which is associated with developmental delays and behavioral problems in children \cite{idjradinata1993reversal}. According to the 2011 PR PedNSS survey, 6\% of children below age five had anemia.
+
+\subsection{Conclusion}
+SISVANAF-PR is beneficial and necessary to maintain positive health outcomes for Puerto Rico. Studies have shown that nutritional, physical activity, food security and health related surveillance systems provide necessary, consistent and accurate data to assess and guide health policy and to improve health outcomes \cite{german2001updated}. The high rates of chronic diseases in Puerto Rico related to dietary and physical activity habits make nutritional and physical activity surveillance imperative to assess and develop health intervention strategies. Because of the impact of food security on availability of nutritious food, and because of Puerto Rico's vulnerability to food insecurity, food security surveillance is necessary to understand and improve the food security conditions of the population of Puerto Rico. Finally, a surveillance system component that focuses on health related factors would complete the components of the SISVANAF-PR for a more comprehensive analysis of the risk behaviors and chronic illnesses that affect the population of Puerto Rico. The complete SISVANAF-PR will provide a solid evidence-based foundation to identify and implement intervention strategies for a better quality of life for all members of society. 
+
+\newpage
+\section{SISVANAF-PR Indicators}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This section presents the SISVANAF-PR indicators based on data availability. The indicators are categorized in four surveillance topic: (1) Nutrition Surveillance, (2) Food Security Surveillance, (3) Physical Activity Surveillance and (4) Health Related Surveillance. Each indicator is described with the following components:
+
+\begin{itemize}
+\item\textbf{Definition:} Provides a brief description for each indicator as defined by the institution or data source available. It describes in detail what the indicator measures.
+\item\textbf{Public Health Impact:} Provides a justification for the use of the indicator by linking the indicator to a health related issue according to literature review.
+\item\textbf{Survey Question:} If the indicator is derived from an epidemiological health survey, the survey question is provided here.
+\item\textbf{Mathematical Formulas:} Describes the mathematical function to calculate the indicator.
+\item\textbf{Data Source:} Provides a pertinent data source to calculate the SISVANAF-PR theoretical indicator. There could be more than one data source contributing to one indicator.
+\end{itemize}
+
+After each surveillance section, a summary table is provided that includes the following six columns named: Indicator Identifier (ID), Theoretical Indicator (TI), Surveillance Indicator (SI), Data Source (DS), Data Time Consistency (DTC), and Goals that contains information pertinent to the SISVANAF development.
+
+\begin{itemize}
+
+\item\textbf{Theoretical Indicator (TI):}  Food and nutrition indicators found in the literature that should be surveyed within the SISVANAF-PR.
+\item\textbf{Surveillance Indicator (SI):} A theoretical indicator that can be surveyed over time because there is an adequate mathematical formula to be calculated and an ongoing and standard collection of the data sheltered and shared by a data source.
+\item\textbf{Data Source (DS):} An organization that collects digital or non-digital information with pertinent data to implement the mathematical formula to calculate the SISVANAF theoretical Indicator. There could be more than one data source contributing to one indicator.
+\item\textbf{Data Time Consistency (DTC):} Frequency in which the data is available to be shared.
+\end{itemize}
+
+
+%%%%%%%%%%%%   NEW PAGE Table of Nutrition Indicator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Nutrition Surveillance Indicators}
+
+%%%
+		\subsubsection{100\% PURE Fruit Juice Consumption among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} A behavioral indicator obtained from the BRFSS defined as the percentage of adults in Puerto Rico who report consuming 100\% PURE fruit juices. This indicator is obtained from the the Fruits and Vegetable BRFSS module.
+
+		\item \textbf{Public Health Impact:}  The consumption of 100\% fruit juice makes over half the average consumption of recommended fruit intake for adults ages 18-30, according to CDC. \cite{DietaryGuidelines2010} 100\% fruit juice contains more nutritional value than sugar drinks (such as sodas and other sugar added beverages). An assessment of participants surveyed for health behaviors and outcomes indicated a positive association between the consumption of 100\% Fruit Juice and diet quality, respondents who had a higher consumption rate of 100\% Fruit Juice had an overall better diet quality and nutritional intake \cite{o2011diet}.
+
+		\item \textbf{Survey Question:} During the past month, how many times per day, week or month did you drink 100\% PURE fruit juices? Do not include fruit-flavored drinks with added sugar or fruit juice you made at home and added sugar to. Only include 100\% juice.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				FVC = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			FVC = Fruits Juice Consumption Average\\
+			
+			N = Weighted sum of daily drink of 100\% PURE fruit juices the past 30 days within a survey year.\\
+			
+			D = Weighted total number of adults within a BRFSS a survey year.\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+
+%% #
+		\subsubsection{Median Daily Intake of Fruits and Vegetables among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} A behavioral indicator defined as the median daily intake of fruits and median daily intake of vegetables for adults in Puerto Rico (times per day) during the past 30 days. This indicator is obtained from the Fruits and Vegetables BRFSS module.
+		\item \textbf{Public Health Impact:} Studies suggest that consuming recommended daily intake of fruits and vegetables per day is associated with a reduced risk of stroke \cite{he2006fruit} and cardiovascular disease \cite{bazzano2002fruit}. There is moderate evidence to suggest that an increased variety of consumption of fruits and vegetables can decrease the risks of coronary heart disease, according to a study in the adult population of Puerto Rico \cite{bhupathiraju2011greater}. In addition, studies suggest that replacing calorie rich foods with fruits and vegetables could promote healthy weight \cite{rolls2004can}. 
+		\item \textbf{Survey Question:} During the past month, not counting juice, how many times per day, week, or month did you eat fruit? Count fresh, frozen, or canned fruit.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			MDFV = Median daily intake of fruits and median daily intake of vegetables for adults in Puerto Rico (times per day) during the past 30 days. \\
+			
+			N = Weighted sum of reported daily intake of fruits and vegetable during the past 30 days within a survey year.\\
+			
+			D = Weighted total number of adults or adolescents within BRFSS or YRBS data set in a survey year.\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+	
+%% #
+		\subsubsection{Bean and Lentils Average Consumption among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the average intake of beans or lentils during the past 30 days within a survey year. This indicator is obtained from the Fruits and Vegetable BRFSS module.
+		\item \textbf{Public Health Impact:} Beans, peas and other forms of mature legumes are cited as having excellent sources of protein, iron, zinc, dietary fiber, potassium and folate \cite{mitchell2009consumption}. These are also recommended as part of a healthy diet according to The Alimentary Guide for Puerto Rico \cite{GuiaAlimentariaPR}. 
+		\item \textbf{Survey Question:} During the past month, how many times per day, week, or month did you eat cooked or canned beans, such as refried, baked, black, garbanzo beans, beans in soup, soybeans, edamame, tofu or lentils. Do NOT include long green beans.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				BLA = \frac{N}{D}
+			\end{equation}
+Where: \\
+			BLA = Average intake of bean or lentils.\\
+			
+			N = Weighted sum of reported daily intake of Beans or lentils during the past 30 days within a survey year.\\
+			
+			D = Weighted total number of adults or adolescents within BRFSS or YRBS data set in a survey year.\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+	
+%% #
+		\subsubsection{Dark Green Vegetable Average Consumption among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} The indicator shows the average intake of dark green vegetables during the past 30 days within a survey year. This indicator is obtained from the Fruits and Vegetables BRFSS module.
+		\item \textbf{Public Health Impact:} Dark green leafy vegetables such as spinach and mustard greens are sources of folate \cite{subar1989folate}, a nutrient recommended especially for women who are pregnant or capable of becoming pregnant in order to reduce risk of neural tube defects \cite{daly1995folate}.
+		\item \textbf{Survey Question:} During the past month, how many times per day, week, or month did you eat dark green vegetables for example broccoli or dark leafy greens including romaine, chard, collard greens or spinach?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				DGVA = \frac{N}{D}
+			\end{equation}
+Where: \\
+			DGVA = Dark Green Vegetable Consumption Average.\\
+			
+			N = Weighted sum of reported daily intake of dark green vegetable during the past 30 days within a survey year.\\
+			
+			D = Weighted total number of adults or adolescents within BRFSS or YRBS data set in a survey year.\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+
+%% #
+		\subsubsection{Orange-Colored Vegetable Average Consumption among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator describes the average intake of orange-colored vegetables during the past 30 days within a survey year. This indicator is obtained from the Fruits and Vegetables BRFSS module. 
+		\item \textbf{Public Health Impact:} Squash, pumpkin, carrots and sweet potatoes are rich in nutrients such as b-carotene, lycopene, lutein and violaxanthin, as well as good sources of vitamin A (associated with vision and bone health), and are rich in other anti-oxidants associated with cellular health \cite{dutta2004structure}. 
+		\item \textbf{Survey Question:} During the past month, how many times per day, week, or month did you eat orange-colored vegetables such as sweet potatoes, pumpkin, winter squash, or carrots?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				OCA = \frac{N}{D}
+			\end{equation}
+Where: \\
+			OCA = Average intake of orange-colored vegetable.\\
+			
+			N = Weighted sum of reported daily intake of orange-colored vegetable during the past 30 days within a survey year.\\
+			
+			D = Weighted total number of adults or adolescents within BRFSS or YRBS data set in a survey year.\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+
+%% #
+		\subsubsection{Other Vegetable Consumption Average among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} Other Vegetable Consumption among Adults indicates the average intake of other any other vegetable excluding orange colored vegetables, dark green vegetables, beans and lentils during the past 30 days. This indicator is obtained from the the Fruits and Vegetable BRFSS module. 
+		\item \textbf{Public Health Impact:} Studies suggest that consuming 2.5 cups of fruits and vegetables per day is associated with a reduced risk of stroke \cite{he2006fruit} and cardiovascular disease \cite{bazzano2002fruit}. There is moderate evidence to suggest that an increased variety of consumption of fruits and vegetables can decrease the risks of coronary heart disease, according to a study in the adult population of Puerto Rico \cite{bhupathiraju2011greater}. In addition, studies suggest that replacing calorie rich foods with fruits and vegetables could promote healthy weight \cite{rolls2004can}. Other vegetables such as tomatoes, potatoes, corn, egg plant, peas, lettuce and cabbage have the potential to provide health benefits. For instance, tomato consumption has been associated with reduced cancer risk \cite{giovannucci1999tomatoes}, as well as the consumption of steamed potatoes \cite{tudela2002induction}.
+
+		\item \textbf{Survey Question:} Not counting what you just told me about, during the past month, about how many times per day, week, or month did you eat OTHER vegetables? Examples of other vegetables include tomatoes, tomato juice or V-8 juice, corn, eggplant, peas, lettuce, cabbage, and white potatoes that are not fried such as baked or mashed potatoes.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				OtVA = \frac{N}{D}
+			\end{equation}
+Where: \\
+			OtVA = Average intake of other vegetable.\\
+			
+			N = Weighted sum of reported daily intake of other vegetable during the past 30 days within a survey year.\\
+			
+			D = Weighted total number of adults or adolescents within BRFSS or YRBS data set in a survey year.\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+
+%% #
+		\subsubsection{Soda or Sugar Drinks Average among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator assesses how often during the past 30 days an adult drank regular soda or other beverage containing sugar. The indicator comes from the BRFSS Sugar Sweetened Beverages and Menu Labeling module.  		
+		\item \textbf{Question:} During the past 30 days, how often did you drink regular soda or pop that contains sugar? Do not include diet soda or diet pop.
+		\item \textbf{Public Health Impact:} Sugar sweetened beverage such as Soda or Sugar drinks are a source of added sugars and increased caloric intake with poor nutritional value. Risk factors such as obesity and overweight and Type 2 diabetes is associated with consumption of sugar sweetened beverages \cite{vartanian2007effects}. 
+		
+		\item \textbf{Formula:} 
+			\begin{equation}
+			SSD = \frac{N}{D}
+			\end{equation}
+Where: \\
+			SSD = Average of soda or sugar drinks consumption per day, week or month.\\
+			
+			N = Number of soda or sugar drinks consumption per day, week or month.\\
+			
+			D = \\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+
+%% #
+		\subsubsection{Sweetened Fruit Drinks Average among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator assesses how often during the past 30 days an adult drank regular sweetened fruit drinks such as Kool-aid, cranberry juice cocktail, and lemonade. The indicator came from the BRFSS Sugar Sweetened Beverages and Menu Labeling module.  		
+		\item \textbf{Public Health Impact:} US Dietary guidelines suggest that when juices are consumed, consumers should choose 100\% fruit juice\cite{DietaryGuidelines2010}. Sugar sweetened beverages such as Soda or Sugar drinks are a source of added sugars and increased caloric intake with poor nutritional value. Risk factors such as obesity and overweight and Type 2 diabetes is associated with consumption of sugar sweetened beverages \cite{vartanian2007effects}. 
+		
+		\item \textbf{Survey Question:} During the past 30 days, how often did you drink sweetened fruit drinks, such as Kool-aid, cranberry juice cocktail, and lemonade? Include fruit drinks you made at home and added sugar to.
+		\item \textbf{Formula:} 
+			\begin{equation}
+			SFD = \frac{N}{D}
+			\end{equation}
+Where: \\
+			SFD = Average of sweetened fruit drinks drinks consumption per day, week or month.\\
+			
+			N = Weighted Number of sweetened fruit drinks drinks consumption per day, week or month.\\
+			
+			D = Weighted number of adults\\
+			
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance Survey
+	\end{itemize}
+	
+	%% #
+		\subsubsection{Calorie Information Use Prevalence among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator assesses if the interviewed used calorie information at fast food chain or other restaurants.  The indicator came from the BRFSS Sugar Sweetened Beverages and Menu Labeling module.
+		\item \textbf{Public Health Impact:} U.S. Dietary Guidelines suggest that adults who consume only what is needed and meet recommended physical activity requirements are more likely to maintain a healthy weight and be at less risk for overweight and obesity \cite{DietaryGuidelines2010}.
+		\item \textbf{Survey Question:} When calorie information is available in the restaurant, how often does this information help you decide what to order?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				CIP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			CIP = Calorie Information Prevalence \\
+			
+			N = Weighted number of interviewed that respond to the question categories within the survey year.\\
+			
+			D = Weighted total number of individuals in the BRFSS interview within the survey year. \\
+			
+		\item \textbf{Data Source: Behavioral Risk Factor Surveillance Survey}
+	\end{itemize}
+	
+%% #
+		\subsubsection{100\% Fruit Juice Intake Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:}100\% fruit juice intake is defined as the consumption of juices such as orange juice, apple juice, and grape juice, excluding the consumption of punch, Kool-Aid, sports drinks, or fruit-flavored drinks.  Indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} The consumption of 100\% fruit juice makes up a majority of the average consumption of recommended fruit intake for children ages 2-18 in the U.S., according to CDC \cite{centersstrategies}. An assessment of participants surveyed for health behaviors and outcomes indicated a positive association between the consumption of 100\% Fruit Juice and diet quality; respondents who had a higher consumption rate of 100\% Fruit Juice had an overall better diet quality and nutritional intake \cite{o2011diet}.
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you drink 100\% fruit juices such as orange juice, apple juice, or grape juice? (Do not count punch, Kool-Aid, sports drinks, or other fruit-flavored drinks.)
+		\item \textbf{Formula:} 
+			\begin{equation}
+				FJIP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			FJIP = 100\% Fruit Juice Intake Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+	
+%% #
+		\subsubsection{Fruit Intake Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Fruit intake prevalence is defined as the number of times a high school student consumes a serving of fruit, not including fruit juice, during the previous week. This indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Puerto Rico nutritional guidelines suggest that high school age students consume at least 5 servings of fruits per day for children under 18 \cite{GuiaAlimentariaPR}. Studies show that higher fruit consumption is associated with lower body mass index \cite{lin2002higher}.
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you eat fruit?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				FsIP = \frac{N}{D} * 100
+			\end{equation}
+Where: \\
+			FsIP = 100\% Fruit Juice Intake Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{Green Salad Intake Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Green salad intake indicates the amount of times during the previous week that the high school student consumed a green salad that included lettuce and other leafy greens.  Indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Salads made of different types of lettuce and greens provide sources of vitamins A and C, calcium, potassium and some anti-oxidants linked to cellular health  \cite{ryder2002new}. Fresh salads, in addition to containing several antioxidants \cite{heimler2007polyphenol}, have been found to contain lutein, an antioxidant linked to cancer prevention \cite{khoo2011carotenoids}.
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you eat green salad?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				GSI = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			GSI = Green Salad Intake Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{Potato Intake Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Potato Intake Prevalence indicates the number of times during a week that the high school student consumed potatoes that were not in the form of french fries, fried potatoes, or potato chips.  This indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Steam-cooked potatoes can provide a source of phenolics, suggested to promote health \cite{tudela2002induction}. Potatoes are a significant source of phenolic acid \cite{mattila2007phenolic}.
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you eat potatoes? (Do not count french fries, fried potatoes, or potato chips.)
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+				PIP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			PIP = Potatoes Intake Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+	
+%% #
+		\subsubsection{Carrots Intake Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Carrots Intake Prevalence indicates the number of times during the last 7 days that the high school respondent consumed carrots.  Indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:}  Studies show that the consumption of carrots has been attributed to a decrease in the risk of cancer due to the vitamin A and other cartenoids found in carrots \cite{engle1991nutritional}, \cite{pool1997consumption}. Carrot consumption has also been attributed to reducing the risk of vitamin A deficiency and as a result, reducing a risk of "night blindness" (common in vitamin A deficient children)  \cite{tang2005spinach}. 
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you eat carrots?
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+			PIP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			PIP = Potatoes Intake Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+	
+
+%% #
+		\subsubsection{Other Vegetable Consumption Prevalence Among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Other Vegetable Consumption Prevalence identifies the consumption of other vegetables excluding the consumption of green salad, potatoes, or carrots.  Indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Studies suggest that consuming 2.5 cups of fruits and vegetables per day is associated with a reduced risk of stroke \cite{he2006fruit} and cardiovascular disease \cite{bazzano2002fruit}. There is moderate evidence to suggest that an increased variety of consumption of fruits and vegetables can decrease the risks of coronary heart disease, according to a study in the adult population of Puerto Rico \cite{bhupathiraju2011greater}. In addition, studies suggest that replacing calorie rich foods with fruits and vegetables could promote healthy weight \cite{rolls2004can}. Other vegetables such as tomatoes, corn, egg plant, and peas have the potential to provide health benefits. For instance, tomato consumption has been associated with reduced cancer risk \cite{giovannucci1999tomatoes}. 
+
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you eat other vegetables? (Do not count green salad, potatoes, or carrots.)
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+			OVCP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			OVCP = Other Vegetable Consumption Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk and Behavioral Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{Soda or Pop Consumption Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} State progress on added-sugar in the diet is measured here by assessing consumption of sugar-sweetened or “regular” sodas among high school students \cite{CDCFoodEnvt2011}. Indicator comes from the Youth Risk and Behavior Surveillance High School Questionnaire, measures soda or pop consumption by asking how many times the respondent drank a whole can, bottle or glass of soda within the span of the last seven days (does not include diet soda).
+		\item \textbf{Public Health Impact:} Sugar sweetened beverages such as Soda or Sugar drinks are a source of added sugars and increased caloric intake with poor nutritional value. Risk factors such as obesity and overweight and Type 2 diabetes is associated with consumption of sugar sweetened beverages \cite{vartanian2007effects}. In addition, dental decay and decreased bone density has been associated with consumption of sugar sweetened beverages among youth \cite{whiting2001relationship}, \cite{tahmassebi2006soft}.
+		\item \textbf{Survey Question:} During the past 7 days, how many times did you drink a can, bottle, or glass of soda or pop, such as Coke, Pepsi, or Sprite? (Do not count diet soda or diet pop.)
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+				SPCP = \frac{N}{D} *100
+			\end{equation} 
+Where: \\
+			SPCP = Soda or Pop Consumption Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{Milk Consumption Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Milk Consumption Prevalence identifies the number of glasses of milk consumed by the high school student respondent within the last 7 days. Glass of milk includes glass or cup, carton, serving of cereal or half pint of milk served at school cafeterias. Indicator comes from the Youth Risk Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Puerto Rico nutritional guidelines suggest that milk products contribute calcium, potassium, fortified vitamin D, as well as other nutrients \cite{GuiaAlimentariaPR}. The consumption of milk is associated with higher bone density and bone health \cite{sandler1985postmenopausal}, \cite{teegarden1999previous}.
+		\item \textbf{Survey Question:} During the past 7 days, how many glasses of milk did you drink? (Count the milk you drank in a glass or cup, from a carton, or with cereal. Count the half pint of milk served at school as equal to one glass.)
+		\item \textbf{Formula:} 
+			\begin{equation}
+				MCP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			MCP = Milk Consumption Prevalence \\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+		
+	\end{itemize}
+
+%% #
+		\subsubsection{Breakfast Consumption Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Breakfast consumption is indicated by the number of days that the high school respondent ate breakfast. Indicator comes from the Youth Risk Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:}  Studies indicate that breakfast consumption is linked to healthy weight maintenance, improved nutrition, and reduced risk of overweight among youth \cite{timlin2008breakfast}, \cite{barton2005relationship}.
+		\item \textbf{Survey Question:} During the past 7 days, on how many days did you eat breakfast?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				MCP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			BfCP = Breakfast Consumption Prevalence \\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+	
+	\subsubsection{Table of Nutrition Surveillance Indicators}
+	
+	The table of Nutrition Surveillance Indicators that follows is a strategy to summarize the information presented in the previous section as a way to provide the reader an alternative way to access the content of this document.
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\begin{landscape}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{.40\textwidth}|>{\raggedright\arraybackslash}p{.15\textwidth}|
+>{\raggedright\arraybackslash}p{.04\textwidth}|
+>{\raggedright\arraybackslash}p{.08\textwidth}|
+>{\raggedright\arraybackslash}p{.50\textwidth}|}
+\caption{Table of Nutrition Surveillance Indicators}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline
+\endfirsthead
+\caption[]{Table of Nutrition Surveillance Indicators (continue)}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline 
+\endhead % all the lines above this will be repeated on every page
+% row
+\textbf{Fruit and Vegetable Consumption among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the variety and contribution of vegetables to the diets of the population aged $2$ years and older to 1.1 cup equivalent per $1,000$ calories. Increase the contribution of fruits to the diets of the population aged $2$ years and older to $0.9$ cup equivalent per $1,000$ calories \cite{Healthynutritionweight}. \\ 
+\hline
+% row
+\textbf{Median Daily Intake of Fruits and Vegetables among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the variety and contribution of vegetables to the diets of the population aged $2$ years and older to 1.1 cup equivalent per $1,000$ calories. Increase the contribution of fruits to the diets of the population aged $2$ years and older to $0.9$ cup equivalent per $1,000$ calories \cite{Healthynutritionweight}.\\ 
+\hline
+
+% row
+\textbf{Bean and Lentils Average Consumption among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of dark green vegetables, orange vegetables, and legumes to the diets of the population aged 2 years and older to 0.3 cup equivalent per 1,000 calories \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Dark Green Vegetable Average Consumption among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of dark green vegetables, orange vegetables, and legumes to the diets of the population aged 2 years and older to 0.3 cup equivalent per 1,000 calories \cite{Healthynutritionweight}. \\
+\hline
+
+% row
+\textbf{Orange-Colored Vegetable Average Consumption among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of dark green vegetables, orange vegetables, and legumes to the diets of the population aged 2 years and older to 0.3 cup equivalent per 1,000 calories \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Other Vegetable Consumption Average among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the variety and contribution of vegetables to the diets of the population aged 2 years and older to 1.1 cup equivalent per 1,000 calories \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Soda or Sugar Drinks Average among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Reduce consumption of calories from added sugars to 10.8 percent of total daily calorie intake  for the population aged 2 years and older (down from 15.7 percent of total daily calorie intake from added sugar in 2001-4) \cite{Healthynutritionweight}.\\ 
+\hline
+
+% row
+\textbf{Sweetened Fruit Drinks Average among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Reduce consumption of calories from added sugars to 10.8 percent of total daily calorie intake  for the population aged 2 years and older (down from 15.7 percent of total daily calorie intake from added sugar in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Calorie Information Use Prevalence among Adults}
+& BRFSS
+& Yes
+& Yearly
+& NA \\ 
+\hline
+
+% row
+\textbf{100\% Fruit Juice Intake Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of fruits to the diets of the population aged 2 years and older to 0.9 cup equivalent per 1,000 calories (up from 0.5 cup equivalent per 1,000 calories in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+% row
+\textbf{Fruit Intake Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of fruits to the diets of the population aged 2 years and older to 0.9 cup equivalent per 1,000 calories (up from 0.5 cup equivalent per 1,000 calories in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Green Salad Intake Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of dark green vegetables, orange vegetables, and legumes to the diets of the population aged 2 years and older to 0.3 cup equivalent per 1,000 calories (up from 0.1 cup equivalent per 1,000 calories in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Potatoes Intake Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& Increase the contribution of total vegetables to the diets of the population aged 2 years and older to 1.1 cup equivalent per 1,000 calories (up from 0.8 cup equivalent per 1,000 calories in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Carrots Intake Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of dark green vegetables, orange vegetables, and legumes to the diets of the population aged 2 years and older to 0.3 cup equivalent per 1,000 calories (up from 0.1 cup equivalent per 1,000 calories in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Other Vegetables Consumption Prevalence among High School Students }
+& YRBS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the contribution of total vegetables to the diets of the population aged 2 years and older to 1.1 cup equivalent per 1,000 calories (up from 0.8 cup equivalent per 1,000 calories in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Soda or Pop Consumption Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& Healthy People 2020: Reduce consumption of calories from added sugars to 10.8 percent of total daily calorie intake  for the population aged 2 years and older (down from 15.7 percent of total daily calorie intake from added sugar in 2001-4) \cite{Healthynutritionweight}. \\ 
+\hline
+
+% row
+\textbf{Milk Consumption Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& NA \\ 
+\hline
+
+% row
+\textbf{Breakfast Consumption Prevalence among High School Students}
+& YRBS
+& Yes
+& Yearly
+& NA \\ 
+\hline
+
+\end{longtable}
+\end{landscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   NEW PAGE  Table of Food Security Indicators %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Food Security Surveillance Indicators}
+
+Before starting this section with Food Security Surveillance Indicators, a few terms should be defined and clarified.
+
+\begin{itemize}
+
+\item\textbf{Food Security}: Household food security is defined as as the readily available access "by all members at all times" to an adequate amount of nutritious food, and the ability of the household to secure food without having to rely on "emergency food supplies, scavenging, stealing, or other coping strategies." \cite{anderson1990core}.
+
+\item\textbf{Food In-security}: Household food insecurity is defined as "limited or uncertain availability of nutritionally adequate and safe foods or limited or uncertain ability to acquire acceptable foods in socially acceptable ways." \cite{anderson1990core}.
+
+\item\textbf{Categories of Food Security} \cite{USDAERSFS}.
+	\begin{itemize}
+		\item \textbf{High Food Security:} Households had no problems or anxiety about consistently accessing adequate food.\cite{USDAERSFS}.
+		\item \textbf{Marginal Food Security:} Households had problems at times or anxiety about accessing adequate food, but the quality, variety, and quantity of their food intake was not substantially reduced.\cite{USDAERSFS}.
+		\item \textbf{Low Food Security:} Households reduced the quality, variety, and desirability of their diets, but the quantity of food intake and normal eating patterns were not substantially disrupted.\cite{USDAERSFS}.
+		\item \textbf{Very Low Food Security:} At times during the year, eating patterns of one or more household members were disrupted and food intake reduced because the household lacked money and other resources for food. \cite{USDAERSFS}.
+\end{itemize}
+
+\item\textbf{Food Security Scale (FSS)} 
+\\The U.S. Department of Agriculture (USDA) created a U.S. Household Food Security Survey used in the Current Population Survey conducted annually by the U.S. Census Bureau. USDA's Economic Research Service (ERS) assigns a food security scale (FSS) to the households (with and without children) surveyed, depending on their responses to questions about economic access to enough variety and quantity of food for them/their family or their children within the last 12 months before the survey \cite{USDAERSFS}. ERS assigns a raw score depending on the sum of the respondent's affirmative responses to a set of questions. Affirmative responses include: "yes," "often," "sometimes," "almost every month," and "some months but not every month." \cite{USDAERSFS}.  The higher raw scores indicate less food security in the household. Lower scores indicate higher or better food security. A score of zero indicates the household with or without children is considered high food security \cite{USDAERSFS}. After calculating the raw score, each household is assigned to one of the four food security categories. Households that fall under the high food security, or moderate food security categories are considered food secure. Households that are given the category of low food security or very low food security are considered food insecure\cite{USDAERSFS}.
+
+\begin{itemize}
+\item \textbf{Data Source:} USDA: National Food Security Surveys, Current Population Survey (CPS)
+\end{itemize}
+
+\end{itemize}
+
+\subsubsection{Food Insecure Households with no Children} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the food insecure households (with one or more persons per household/family unit) with no child present. The indicator is based on the USDA Food Security Score (FSS) which is based on the sum of affirmative responses to the following survey questions. All households who had a raw score between 3-10 were considered food insecure, households with a raw score of 0-2 were considered food secure. This indicator comes from the U.S. Census Community Population Survey U.S. Household Food Security Survey Module: Three-Stage design, with Screens.
+		\item \textbf{Public Health Impact:}
+\begin{itemize}
+\item\textbf{Adult Physical Health:} Food in-security increases the risk of diabetes \cite{seligman2007food}, and is linked to the risk of developing other chronic illnesses such as hypertension and coronary heart disease \cite{seligman2010food}.
+\item\textbf{Maternal Health:} Food in-security among women who are pregnant is associated with higher risks of birth complications and low birth weight due to decrease in necessary nutrients\cite{tarasuk2001household}. Some birth defects may also result due to a diet lacking sufficient folate \cite{bailey2010folate}.
+\item\textbf{Obesity:}  Studies have indicated an association between food insecurity and obesity and overweight, especially among food insecure women and children \cite{townsend2001food} \cite{wilde2006individual} \cite{casey2006association} \cite{alaimo2001low} \cite{bronte2007food} \cite{martin2007food}. This phenomenon could be explained by the lack of access to nutrient rich foods, where a household may opt to spend their limited resources on less expensive, higher calorie, lower nutrient foods, in order to avoid hunger \cite{drewnowski2004poverty}. 
+\end{itemize}
+		\item \textbf{Survey Question:}
+\begin{enumerate}
+  \item "We worried whether our food would run out before we got money to buy more." Was that often, sometimes, or never true for you in the last 12 months?
+  \item "The food that we bought just didn't last and we didn't have money to get more." Was that often, sometimes, or never true for you in the last 12 months?
+  \item "We couldn't afford to eat balanced meals." Was that often, sometimes, or never true for you in the last 12 months?
+  \item In the last 12 months, did you or other adults in the household ever cut the size of your meals or skip meals because there wasn't enough money for food? (Yes/No)
+  \item (If yes to question 4) How often did this happen--almost every month, some months but not every month, or in only 1 or 2 months?
+  \item In the last 12 months, did you ever eat less than you felt you should because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months, were you ever hungry, but didn't eat, because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months, did you lose weight because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months did you or other adults in your household ever not eat for a whole day because there wasn't enough money for food? (Yes/No)
+  \item (If yes to question 9) How often did this happen--almost every month, some months but not every month, or in only 1 or 2 months?
+\end{enumerate}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\Percent of food Insecure households in Puerto Rico
+			
+			N = \\Households without children with a raw score of 3-10 (Sum of affirmative responses to the mentioned survey questions). Affirmative responses include: "yes," "often," "sometimes," "almost every month," and "some months but not every month." 
+			
+			D = \\All Households without children who responded to the survey questions.
+			
+		\item \textbf{Data Source:}  U.S. Census. Current Population Survey (CPS) U.S. Household Food Security Survey Module: Three Stage Design.
+	\end{itemize}
+
+\subsubsection{Food Insecure Households with Children} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the food insecure households (with one or more persons per household/family unit) with one or more children 17 years or younger present. The indicator is based on the USDA Food Security Score (FSS) which is based on the sum of affirmative responses to the following survey questions. All households with a raw score of 3-18 were considered food insecure, households with a score of 0-2 were considered food secure. This indicator comes from the U.S. Census Community Population Survey U.S. Household Food Security Survey Module: Three-Stage design, with Screens.
+		\item \textbf{Public Health Impact:} Food in-security in households with children has been linked to increased risk of several chronic conditions such as anemia \cite{eicher2009food}, and oral health problems \cite{muirhead2009oral}. Children born to food insecure mothers are at increased risk for delayed development, low birth weight, and learning difficulties \cite{cook2008brief} \cite{cook2004food} \cite{jyoti2005food} \cite{skalicky2006child}. In addition, one study shows that infants (below 36 months) of food insecure households were more than twice as likely to have "fair to poor" health outcomes, and more than 33\% higher chance of being hospitalized \cite{cook2004food}. One report measuring Child Health Related Quality of Life and its relation to household food security concluded that "Children who live in food insecure households have poorer HRQOL. Food security should be considered an important risk factor for child health" \cite{casey2005child}.
+
+		\item \textbf{Survey Question:} 
+\begin{enumerate}
+ \item "We worried whether our food would run out before we got money to buy more." Was that often, sometimes, or never true for you in the last 12 months?
+  \item "The food that we bought just didn't last and we didn't have money to get more." Was that often, sometimes, or never true for you in the last 12 months?
+  \item "We couldn't afford to eat balanced meals." Was that often, sometimes, or never true for you in the last 12 months?
+  \item In the last 12 months, did you or other adults in the household ever cut the size of your meals or skip meals because there wasn't enough money for food? (Yes/No)
+  \item (If yes to question 4) How often did this happen--almost every month, some months but not every month, or in only 1 or 2 months?
+  \item In the last 12 months, did you ever eat less than you felt you should because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months, were you ever hungry, but didn't eat, because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months, did you lose weight because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months did you or other adults in your household ever not eat for a whole day because there wasn't enough money for food? (Yes/No)
+  \item (If yes to question 9) How often did this happen--almost every month, some months but not every month, or in only 1 or 2 months?
+  \item "We relied on only a few kinds of low-cost food to feed our children because we were running out of money to buy food." Was that often, sometimes, or never true for you in the last 12 months?
+  \item "We couldn't feed our children a balanced meal, because we couldn't afford that." Was that often, sometimes, or never true for you in the last 12 months?
+  \item "The children were not eating enough because we just couldn't afford enough food." Was that often, sometimes, or never true for you in the last 12 months?
+  \item In the last 12 months, did you ever cut the size of any of the children's meals because there wasn't enough money for food? (Yes/No)
+  \item In the last 12 months, were the children ever hungry but you just couldn't afford more food? (Yes/No)
+  \item In the last 12 months, did any of the children ever skip a meal because there wasn't enough money for food? (Yes/No)
+  \item (If yes to question 16) How often did this happen--almost every month, some months but not every month, or in only 1 or 2 months?
+  \item In the last 12 months did any of the children ever not eat for a whole day because there wasn't enough money for food? (Yes/No)
+\end{enumerate}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\Percent of Food Insecure Households with Children
+			
+			N = \\Households with Children who had a raw score of 3-18 (Sum of affirmative responses to the mentioned survey questions). Affirmative responses include: "yes," "often," "sometimes," "almost every month," and "some months but not every month." 
+			
+			D = \\All Households with Children who responded to the survey questions. 
+			
+		\item \textbf{Data Source:} U.S. Census. Current Population Survey (CPS) U.S. Household Food Security Survey Module: Three Stage Design.
+	\end{itemize}
+
+\subsubsection{Access to Farmer's Markets} 
+	\begin{itemize}
+		\item \textbf{Definition:} The number of farmers markets per 100,000 state residents provides a broad estimate of the availability of fruits and vegetables from farmers markets adjusted for variation in state population \cite{fruitandvegetable2013}. 
+		\item \textbf{Public Health Impact:} Farmers markets are a mechanism for purchasing foods from local farms and can augment access to fruits and vegetables from typical retail stores or provide a retail venue for fruits and vegetables in areas lacking such stores \cite{centersstrategies}, \cite{story2008creating}.
+		\item \textbf{Survey Question:}
+				This indicator is derives information from U.S. Census population estimates and the USDA National Farmers Market Directory.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\ Number of farmer's markets per 100,000 state residents
+			
+			N = \\ Total farmers markets in Puerto Rico
+			
+			D = \\ Total estimated population in Puerto Rico (U.S. Census)
+			
+		\item \textbf{Data Source:} United States Department of Agriculture, Agricultural Marketing Service. USDA National Farmers Market Directory. Released August 2012. Date accessed August 23, 2012.  Available at http://apps.ams.usda.gov/FarmersMarkets. Census Bureau. July 1, 2011. Date accessed July 23, 2012. 
+Available at http://www.census.gov/popest/. \cite{fruitandvegetable2013}.
+
+	\end{itemize}
+
+\subsubsection{Access to Farmer's Markets that Accept Nutrition Assistance Program Coupons} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the percentage of farmers markets that accept nutrition assistance program benefits: Programa de Asistencia Nutricional (PAN) (Nutritional Assistance Program in English, NAP), through participation in the Farmer's Market Nutrition Program (FMNP). This indicates the number of farmers markets with one or more vendors accepting program benefits based on survey responses received by USDA’s Agricultural Marketing Service (AMS). This number will differ from the official number used by USDA’s Food and Nutrition Service (FNS), which is based on the number of organizations and vendors who are authorized to accept program benefits \cite{fruitandvegetable2013}.
+		
+		\item \textbf{Public Health Impact:} Farmers markets that accept nutrition assistance program benefits, such as Supplemental Nutrition Assistance Program (SNAP), Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) Farmers Market Nutrition Program (FMNP) coupons, and WIC Cash Value Vouchers (CVV), improve access to Fruits and Vegetables for individuals and families with lower incomes \cite{story2008creating} \cite{fox2004effects} \cite{kendall1996relationship} \cite{black2004special} \cite{dunifon2003influences}.
+		\item \textbf{Survey Question:}
+		This indicator is derived from USDA Farmers Market Nutrition Program and USDA National Farmers Market Directory and the U.S. Census. 
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\ Number of farmers markets that accept NAP coupons per population.
+			
+			N = \\ Total number of farmers markets that accept NAP coupons. 
+			
+			D = \\ Total estimated population in Puerto Rico (U.S. Census)
+			
+		\item \textbf{Data Source:} Available at http://www.fns.usda.gov/wic/FMNP/ FMNPgrantlevels.htm. \cite{fruitandvegetable2013}.
+	\end{itemize}
+
+\subsubsection{Access to Farmers Market that Participate in the WIC Farmers' Market Nutrition Program (FMNP)} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator reveals the percentage of farmers markets that accept program benefits from Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) through participation in the WIC Farmer's Market Nutrition Program (FMNP). This is the number of farmers markets with one or more vendors accepting program benefits based on survey responses received by USDA’s Agricultural Marketing Service (AMS). This number will differ from the official number used by USDA’s Food and Nutrition Service (FNS), which is based on the number of organizations and vendors who are authorized to accept program benefits \cite{fruitandvegetable2013}. 
+		\item \textbf{Public Health Impact:} Farmers markets that accept nutrition assistance program benefits, such as Supplemental Nutrition Assistance Program (SNAP), Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) Farmers Market Nutrition Program (FMNP) coupons, and WIC Cash Value Vouchers (CVV), improve access to Fruits and Vegetables for individuals and families with lower incomes \cite{story2008creating} \cite{fox2004effects} \cite{kendall1996relationship} \cite{black2004special} \cite{dunifon2003influences}.
+		\item \textbf{Survey Question:}
+		This indicator is derived from USDA Farmers Market Nutrition Program and USDA National Farmers Market Directory and the U.S. Census.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\ Number of farmers markets that accept WIC coupons per population.
+			
+			N = \\ Total number of farmers markets that accept WIC coupons. 
+			
+			D = \\ Total estimated population in Puerto Rico (U.S. Census)
+			
+		\item \textbf{Data Source:} WIC Farmers Market Nutrition Program. Grant Levels by State FY 2008-2012. Date accessed August 30, 2012. Available at http://www.fns.usda.gov/wic/FMNP/FMNPgrantlevels.htm. \cite{fruitandvegetable2013}.
+	\end{itemize}
+
+\subsubsection{Modified Retail Food Environment Index}
+	\begin{itemize}
+		\item \textbf{Definition:} The Modified Retail Food Environmental Index (mRFEI) identifies the number of food retailers that provide fruits and vegetables, and other food retailers that may not provide fruit and vegetable access. As defined by CDC Children’s Food Environment State Indicator Report, 2011, ``Lower mRFEI scores for a state indicate either a greater number of census tracts that do not contain any healthy food retailers, a greater number of census tracts that contain many convenience stores and fast food restaurants relative to the number of healthy food retailers, or both." \cite{CDCFoodEnvt2011}.
+		\item \textbf{Public Health Impact:} Some studies associate dietary habits with neighborhood food retailer access \cite{story2008creating}. According an article by Babey et al, Designed for Disease: The Link Between Local Food Environments and Obesity and Diabetes, ``Some studies suggest that greater access to convenience stores and fast food restaurants, where healthy choices may not be readily available and may cost more, has been associated with greater likelihood of obesity and lower dietary quality."  \cite{babey2008designed} 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				mRFEI = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			mRFEI = Modified Retail Food Environment Index
+			
+			N = Number of Healthy Food Retailers.
+\\ Number of Supermarkets, super centers, and produce stores within census tracts or half a mile from the tract boundary. The following stores as defined by North American Industry Classification Codes (NAICS) were included: 
+\begin{itemize}
+  \item Supermarkets and larger grocery stores (NAICS 445110 supermarkets further defined as stores with equal to or greater than 50 annual payroll employees and larger grocery stores defined as stores with 10-49 employees).
+  \item Fruit and Vegetable Markets (NAICS 445230) Fruit and vegetable markets include establishments that retail produce and includes stands, permanent stands, markets, and permanent markets. Produce is typically from wholesale but can include local. 
+  \item Warehouse Clubs (NAICS 452910).
+\end{itemize}
+			
+			D = Number of Healthy Food Retailers + Number of less Healthy Food Retailers.
+\\ Number supermarkets, super centers, produce stores, fast food restaurants, and convenience stores within census tracts or half of 1 mile from the tract boundary. 
+\begin{itemize}
+  \item Supermarkets, super centers, and produce stores were defined as in the numerator.
+  \item Fast food stores were defined according to NAICS code 722211(fast food restaurants).
+  \item Convenience stores were defined according to NAICS code 445120 (convenience stores) or NAICS code 445110 (small groceries) where the number of employees was 3 or fewer.
+\end{itemize}
+			
+		\item \textbf{Data Source:} U.S. Census, http://www. census.gov/eos/www/naics
+	\end{itemize}
+
+\subsubsection{Percentage of Cropland Acreage Harvested for Fruits and Vegetables} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the percentage of cropland acreage harvested for fruits and vegetables for sale.
+
+		\item \textbf{Public Health Impact:} Cropland acreage harvested for fruits and vegetables is a broad indicator of domestic fruits and vegetables inputs to the food system \cite{sobal1998conceptual}. According to Story, et al, local production of fruits and vegetables is a measure of the availability of fruits and vegetables in local retailers and may indicate an improved access of nutritious food for the population to meet nutritional guidelines \cite{story2008creating}.
+		\item \textbf{Survey Question:}
+		This data is available every five years by Census of Agriculture, USDA National Agriculture Statistics Service.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\ Percentage of Cropland Acreage Harvested for Fruits and Vegetables
+			
+			N = \\ Total cropland harvested for fruits and vegetables includes:
+\begin{itemize}
+  \item Table 15 Vegetables, page 15
+  \item Table 15 Fruits (excluding nuts), page 15
+  \item Table 15 Berries, page 15.
+\end{itemize}
+			D = \\ Total farms with cropland harvested found in Table 15, Puerto Rico Data: 2007, page 15. 
+			
+		\item \textbf{Data Source:} USDA National Agriculture Statistics Services: Census of Agriculture
+	\end{itemize}
+
+\subsubsection{Consumption Percentage of Locally Produced Fruits and Vegetables} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the percentage of fruits and vegetables that are consumed locally.
+
+		\item \textbf{Public Health Impact:} Cropland Acreage Harvested for Fruits and Vegetables is a broad indicator of domestic fruits and vegetables inputs to the food system. State-grown fruits and vegetables can provide produce to institutional buyers as well as retail venues that source from local growers and thus may improve access for the population of healthier food options \cite{sobal1998conceptual}.
+		\item \textbf{Survey Question:}
+		Information for this indicator is derived from \textit{``Encuestas de la Oficina de Estadisticas Agr\'icolas, Departamento de Agricultura Externa, Junta de Planificaci\'on de Puerto Rico"}.
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			Y = \\ Percentage of fruits and vegetables produced locally that are consumed locally
+			
+			N = \\ Total fruits and vegetables consumed found in \textit{``Encuestas de la Oficina de Estadisticas Agricolas, Departamento de Agricultura Externa, Junta de Planificaci\'on de Puerto Rico"}.
+			
+\begin{itemize}
+\item{Fruits:} Per Capita Consumption in pounds.
+\item{Vegetables:} Per Capita Consumption in pounds.
+\item{Legumes:} Per Capita Consumption in pounds.
+\end{itemize}
+			
+			D = \\ Total fruits and vegetables produced locally found in \textit{``Encuestas de la Oficina de Estadisticas Agr\'icolas, Departamento de Agricultura Externa, Junta de Planificaci\'on de Puerto Rico"}.
+			
+		\item \textbf{Data Source:} \textit{``Encuestas de la Oficina de Estadisticas Agr\'icolas, Departamento de Agricultura Externa, Junta de Planificaci\'on de Puerto Rico"}.
+	\end{itemize}
+
+	\subsubsection{Table of Food Security Surveillance Indicators}
+	
+	The table of Table of Food Security Surveillance Indicators that follows is a strategy to summarize the information presented in the previous section as a way to provide the reader an alternative way to access the content of this document.
+	
+\newpage
+\begin{landscape}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{.40\textwidth}|>{\raggedright\arraybackslash}p{.15\textwidth}|
+>{\raggedright\arraybackslash}p{.04\textwidth}|
+>{\raggedright\arraybackslash}p{.08\textwidth}|
+>{\raggedright\arraybackslash}p{.50\textwidth}|}
+\caption{Table of Food Security Surveillance Indicators}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline
+\endfirsthead
+\caption[]{Table of Food Security Surveillance Indicators (continue)}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline 
+\endhead % all the lines above this will be repeated on every page
+% row template
+\textbf{Food Insecure Households with no Children} 
+& Census Community Population Survey Food Security Survey (excludes PR)
+& NA
+& Yearly
+& Healthy People 2020: Reduce household food insecurity and in doing so reduce hunger to 6.0 percent \cite{Healthynutritionweight}. \\ 
+\hline
+% row 13
+\textbf{Food Insecure Households with Children}
+& Census Community Population Survey Food Security Survey (excludes PR)
+& NA
+& Yearly
+& Healthy People 2020: Reduce household food insecurity and in doing so reduce hunger to 6.0 percent (down from 14.8 percent in 2008 based on U.S. data, excluding PR data) \cite{Healthynutritionweight}. Eliminate very low food security among children to 0.2 percent from 1.3 percent in 2008 \cite{Healthynutritionweight}. \\ 
+\hline
+% row 14
+\textbf{Access to Farmers Market}
+& Puerto Rico Department of Agriculture, Census
+& Yes
+& NA
+& Healthy People 2020: Increase the proportion of Americans who have access to a food retail outlet that sells a variety of foods that are encouraged by the Dietary Guidelines for Americans \cite{Healthynutritionweight}. \\ 
+\hline
+% row template
+\textbf{Access to Farmers Market that Accepts Nutrition Assistance Program Coupons}
+& Puerto Rico Department of Agriculture and Puerto Rico Department of Family
+& Yes
+& NA
+& Healthy People 2020: Increase the proportion of Americans who have access to a food retail outlet that sells a variety of foods that are encouraged by the Dietary Guidelines for Americans \cite{Healthynutritionweight}.\\ 
+\hline
+% row template
+\textbf{Access to Farmers Market that Participate in the WIC Farmers' Market Nutrition Program}
+& Puerto Rico Department of Agriculture and Puerto Rico Department of Family
+& Yes
+& NA
+& Healthy People 2020: Increase the proportion of Americans who have access to a food retail outlet that sells a variety of foods that are encouraged by the Dietary Guidelines for Americans \cite{Healthynutritionweight}.\\ 
+\hline
+% row template
+\textbf{mRFEI Modified Retail Food Environment Index}
+& Census
+& NA
+& NA
+& Healthy People 2020: Increase the proportion of Americans who have access to a food retail outlet that sells a variety of foods that are encouraged by the Dietary Guidelines for Americans \cite{Healthynutritionweight}.\\ 
+\hline
+% row template
+\textbf{Percentage of Cropland Acreage Harvested for Fruits and Vegetables}
+& Census of Agriculture USDA National Agriculture Statistics Service
+& Yes
+& Every five years
+& NA \\ 
+\hline
+% row template
+\textbf{Percentage of Fruits and Vegetables Produced Locally per Consumption}
+& Puerto Rico Department of Agriculture
+& Yes
+& yearly
+& NA \\ 
+\hline
+
+
+\end{longtable}
+\end{landscape}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   NEW PAGE  Table of Physical Activity  Indicators %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Physical Activity Surveillance Indicators}
+
+%% #
+		\subsubsection{Physical Activity Prevalence among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} Physical activity prevalence among adults indicates the proportion of adults in the state who did not participate in any physical activity during the last month. This indicator is obtained from the Physical Activity BRFSS module.
+		\item \textbf{Public Health Impact:} The World Health Organization (WHO) attributes physical inactivity to six percent of deaths as the fourth leading factor of global deaths \cite{mathers2009global}. Physical inactivity has also been linked to "approximately 21 to 25 percent of breast and colon cancers, 27 percent of diabetes and 30 percent of ischemic heart disease burden," according to WHO estimates \cite{mathers2009global}. Adequate physical activity has been linked to reduced risks of becoming overweight, developing osteoporosis, some cancers \cite{kushi2006american}, type 2 diabetes and cardiovascular disease \cite{lifshitz2002reduction} \cite{bassuk2005epidemiological} \cite{healy2008objectively}.
+		\item \textbf{Survey Question:} During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				PAPA = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			PAPA = Physical Activity Prevalence \\
+			
+			N = Weighted number of adults who respond yes to the physical activity question within the survey year\\
+			
+			D = Weighted total number of adults in the BRFSS interview within the survey year.\\
+			
+		\item \textbf{Data Source: Behavioral Risk Factor Surveillance Survey}
+	\end{itemize}
+
+%% #
+		\subsubsection{Physical Activity Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} Physical Activity Prevalence among High School Students identifies the number of days that the respondent exercised for 60 minutes during the past 7 days. Indicator comes from the Youth Risk Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} The World Health Organization (WHO) attributes physical inactivity to six percent of deaths as the fourth leading factor of global deaths \cite{mathers2009global}. Physical inactivity has also been linked to "approximately 21 to 25 percent of breast and colon cancers, 27 percent of diabetes and 30 percent of ischemic heart disease burden," according to WHO estimates \cite{mathers2009global}. Adequate physical activity has been linked to reduced risks of becoming overweight, developing osteoporosis, some cancers \cite{kushi2006american}, type 2 diabetes and cardiovascular disease \cite{lifshitz2002reduction} \cite{bassuk2005epidemiological} \cite{healy2008objectively}.
+		\item \textbf{Survey Question:} During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? (Add up all the time you spent in any kind of physical activity that increased your heart rate and made you breathe hard some of the time.)
+		\item \textbf{Formula:} 
+			\begin{equation}
+				Y = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			PAPhs = Physical Activity Prevalence among High School Students\\
+			
+			N = Weighted number of high school student who answer one of the question categories\\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{TV Watch Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the average number of hour watching television during an average school day (zero, less than 1 hour or up to 5 or more hours per day). 
+		
+		\item \textbf{Public Health Impact:} Excessive television viewing among youth is associated with increased risk of overweight and obesity \cite{salmon2006television}, as it is associated with less exercise and unhealthy eating patterns (consuming sugar sweetened beverages, fast food, and fewer fruits and vegetables) \cite{coon2001relationships}. Puerto Rico's Nutritional Guidelines suggest that youth reduce screen time (television viewing, playing electronic games, using a computer other than for homework) and other sedentary behaviors \cite{GuiaAlimentariaPR}.
+		\item \textbf{Survey Question:} On an average school day, how many hours do you watch TV?
+		\item \textbf{Formula:} 
+			\begin{equation}
+				TVW = \frac{N}{D} * 100
+			\end{equation}
+Where: \\
+			TVW = TV Watch Prevalence \\
+			
+			N = Weighted number of high school students who answer one of the question categories \\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{Video Games Use Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the average hours per school day (Monday through Friday), that the participant spends playing video or computer games or using a computer for reasons other than school. Included are Xbox, PlayStation, iPod, and iPad or other tablet, smartphone, YouTube, Facebook, other social networking, and internet (0 hours, less than 1 hour per day- 5 or more hours per day). Indicator comes from the Youth Risk Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Computer usage and video game playing are associated with physical inactivity among high school age youth \cite{fotheringham2000computer}. Children and adolescents are encouraged to spend no more than 1 to 2 hours each day watching television, playing electronic games, or using the computer (other than for homework) \cite{DietaryGuidelines2010}. 
+		\item \textbf{Survey Question:} On an average school day, how many hours do you play video or computer games or use a computer for something that is not school work? (Count time spent on things such as Xbox, PlayStation, an iPod, an iPad or other tablet, a smartphone, YouTube, Facebook or other social networking tools, and the Internet.)
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+				VGUP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			VGUP = Video Game Use Prevalence Student \\
+			
+			N = Weighted number of high school student who answer one of the question categories \\
+			
+			D = Weighted number of high school students within the survey year \\
+			
+		\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+%% #
+		\subsubsection{Physical Education Days Prevalence Among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator measures the average number of days that a participant partakes in physical education (PE) classes per school week (Monday through Friday), on a scale from zero to five days \cite{YRBS}. Indicator comes from the Youth Risk Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Studies show that physical education classes can increase adolescent participation in physical activity and help high school students develop the knowledge, attitudes, and skills they need to engage in lifelong physical activity \cite{trudeau2005contribution}, \cite{gordon2000determinants}.
+		\item \textbf{Survey Question:} In an average week when you are in school, on how many days do you go to physical education (PE) classes?
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+				PEDP = \frac{N}{D} * 100
+			\end{equation}
+Where: \\
+			Y = Physical Education Days Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories \\
+			
+			D = Weighted number of high school students within the survey year \\			
+
+\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}
+	\end{itemize}
+
+		\subsubsection{Sport Team Participation Prevalence among High School Students} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the number of sports teams (including school or community groups) that the high school respondent participated in during the past 12 months, on a scale of zero to three or more teams \cite{YRBS}. Indicator comes from the Youth Risk Behavior Surveillance High School Questionnaire.
+		\item \textbf{Public Health Impact:} Studies have shown that ``children involved in team sports tend to be more physically fit than their uninvolved peers and have greater involvement in physical activity across time" \cite{weintraub2008team}.
+		\item \textbf{Survey Question:} During the past 12 months, on how many sports teams did you play? (Count any teams run by your school or community groups.)
+
+		\item \textbf{Formula:} 
+			\begin{equation}
+				STPP = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			STPP = Sport Team Participation Prevalence\\
+			
+			N = Weighted number of high school student who answer one of the question categories \\
+			
+			D = Weighted number of high school students within the survey year \\			
+
+	\item \textbf{Data Source: Youth Risk Behavior Surveillance High School Questionnaire}			
+\end{itemize}
+
+	\subsubsection{Table of Physical Activity Surveillance Indicators}
+	
+	The table of Table of Physical Activity Surveillance Indicators that follows is a strategy to summarize the information presented in the previous section as a way to provide the reader an alternative way to access the content of this document.
+	
+\newpage
+\begin{landscape}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{.40\textwidth}|>{\raggedright\arraybackslash}p{.15\textwidth}|
+>{\raggedright\arraybackslash}p{.04\textwidth}|
+>{\raggedright\arraybackslash}p{.08\textwidth}|
+>{\raggedright\arraybackslash}p{.50\textwidth}|}
+\caption{Table of Physical Activity Surveillance Indicators}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline
+\endfirsthead
+\caption[]{Table of Physical Activity Surveillance Indicators (continue)}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline 
+\endhead % all the lines above this will be repeated on every page
+% row
+\textbf{Physical Activity Prevalence among Adults}
+& BRFSS
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of adults who meet current Federal physical activity guidelines for aerobic physical activity and for muscle-strengthening activity by 10 percent (up to 47.9 percent from 43.5 percent in 2008) \cite{Healthynutritionweight}.\\ 
+\hline
+% row 
+\textbf{Physical Activity Prevalence among High School Students}
+& YBRFS
+& Yes
+& Bi-annual
+& Healthy People 2020: Increase the proportion of adolescents who meet current Federal physical activity guidelines for aerobic physical activity and for muscle-strengthening activity by 10 percent (up to 20.2 percent from 18.4 percent in 2009) \cite{Healthynutritionweight}.\\ 
+\hline
+% row
+TV Watch Prevalence among High School Students
+& YBRFS
+& Yes
+& Bi-annual
+& Healthy People 2020: Increase the proportion of adolescents in grades 9 through 12 who view television, videos, or play video games for no more than 2 hours a day by 10 percent (up to 73.9 percent from 67.2 percent in 2009) \cite{Healthynutritionweight}. \\ 
+\hline
+% row
+\textbf{Video Games Use Prevalence among High School Students}
+& YBRFS
+& Yes
+& Bi-annual
+& Healthy People 2020: Increase the proportion of adolescents in grades 9 through 12 who view television, videos, or play video games for no more than 2 hours a day by 10 percent (up to 73.9 percent from 67.2 percent in 2009) \cite{Healthynutritionweight}. \\ 
+\hline
+% row
+\textbf{Physical Education Days Prevalence among High School Students}
+& YBRFS
+& Yes
+& Bi-annual
+& Healthy People 2020: Increase the proportion of adolescents who participate in daily school physical education by 10 percent (up to 36.6 percent from 33.3 percent in 2009). \cite{Healthynutritionweight}.\\ 
+\hline
+%row
+\textbf{Sport Team Participation Prevalence among High School Student}
+& YBRFS
+& Yes
+& Bi-annual-
+& NA \\ 
+\hline
+
+\end{longtable}
+\end{landscape}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   NEW PAGE  Table of Nutrition \& Physical Activity Health Related Effects Surveillance Indicators %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Nutrition \& Physical Activity Health Related Effects Surveillance Indicators}
+
+\subsubsection{Low Birth weight Prevalence for Children Under Five Years} 
+
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the prevalence of children under five years born with low birth weight (LBW), defined as $<$2500 grams. 
+		
+		\item \textbf{Public Health Impact:} Studies suggest that low birth weight (less than 2,500 grams) is an important factor affecting neonatal mortality and a significant determinant of post neonatal mortality \cite{barker1992fetal}. Low birth weight infants who survive are at increased risk for health problems ranging from neuro-developmental disabilities to respiratory disorders \cite{martorell1999nature} \cite{black2008maternal}.
+		
+		\item \textbf{Formula:} 
+		
+			\begin{equation} 
+		PLBW = \frac{N}{D} *100	
+			\end{equation} 
+
+Where: \\
+	PLBW = Low birth weight prevalence
+			
+			N = Number of infants with weight at birth of $<$2,500 grams (low birth weight) born during a reporting period
+			
+			D = Number of infants with birth weight data born during the reporting period
+		
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+%%#
+\subsubsection{High birth weight Prevalence for Children Under Five Years} 
+	\begin{itemize}
+	\item \textbf{Definition:} This indicator identifies the prevalence of children born with high birth weight (HBW) , defined as $>$4000 grams. 
+	
+	\item \textbf{Public Health Impact:} High birth weight usually occurs in full-term or post-term infants but can occur in preterm infants. Studies indicate that HBW puts infants at increased risk for birth injuries such as shoulder dystocia and infant mortality rates are higher among full-term infants who weigh more than 4000 grams than infants weighing between 3000 and 4000 grams \cite{mollberg2005high}. 
+		
+\item \textbf{Formula:} 
+			\begin{equation} 
+		PHBW = \frac{N}{D} * 100	
+			\end{equation} 
+
+Where: \\
+	PHBW = High birth weight prevalence \\
+			
+			N = Number of infants with weight at birth of $>$4,000 grams (high birth weight) born during a reporting period \\
+			
+			D = Number of infants with birth weight data born during the reporting period \\
+
+\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+
+%% #
+\subsubsection{Short Stature Prevalence Among Children Under Five Years} 
+	\begin{itemize}
+		\item \textbf{Definition:} Short stature, a growth indicator, is defined as a length or stature $<$ 5th percentile on the CDC age- and gender-specific length or stature reference (CDC, 2000). Length/stature-for-age describes linear growth relative to age. This indicator measures the prevalence of children born with short birth stature. 
+		
+		\item \textbf{Public Health Impact:}  Short stature, also referred to as low-length/height-for age or stunting, is used as an indicator of chronic malnutrition and it reflects the long-term health and nutritional history of a child \cite{world1995physical}. Short stature in children might be an indicator of poor nutrition and repeated incidences of infections \cite{black2008maternal} \cite{uauy2008nutrition} \cite{stephenson1994helminth} \cite{oberhelman1998correlations} \cite{stephenson2000malnutrition}. In some children, short stature may be related to factors such as lower birth weight or short parental stature. The WIC Nutrition Risk Criteria defines short stature as $<$ 10th percentile in accordance with the preventive emphasis of the program \cite{national1996WIC}.
+		
+				\item \textbf{Formula:} 
+		
+			\begin{equation} 
+		SSPUF = \frac{N}{D} *100	
+			\end{equation} 
+
+Where: \\
+	SSPUF = Short Stature Prevalence Among Children Under Five Years\\
+			
+			N = Number of children under five year of age bellow the 5th percentiles stature of their adequate height\\
+			
+			D = Total number of children under five with adequate stature\\
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+%% #
+	\subsubsection{Underweight Prevalence Among Children Under Five Years} 
+	\begin{itemize}
+		\item \textbf{Definition:} Underweight, a growth indicator, is defined as weight-for-length $<$ 5th percentile based on the CDC gender-specific weight-for-length reference for children less than 2 years of age and Body Mass Index (BMI )-for-age $<$ 5th percentile for children 2 to 20 years of age based on the CDC gender-specific BMI-for-age reference \cite{mei1998increasing}. \\
+		The WIC Nutrition Risk Criteria defines underweight as $<$ 10th percentile weight-for-length or BMI-for-age in accordance with the preventive emphasis of the program \cite{national1996WIC}. This indicator identifies children born as underweight.
+		
+		\item \textbf{Public Health Impact:} Underweight is an indicator associated with acute malnutrition \cite{martorell1999nature}. Underweight has also been linked to excess deaths, in a study conducted in the U.S. in 2000, the prevalence of underweight was associated with 33,746 excess deaths \cite{flegal2005excess}.
+		
+	\item \textbf{Formula:} 
+			\begin{equation} 
+		UPCUF = \frac{N}{D} *100	
+			\end{equation} 
+
+Where: \\
+	SSPUF = Underweight Prevalence Among Children Under Five Years\\
+			
+			N = Number of children under five year of age bellow the 5th percentiles of their adequate weight\\
+			
+			D = Total number of children under five with adequate weight\\
+		
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+%% #
+	\subsubsection{Obesity Prevalence Among Children Under Five Years} 
+	\begin{itemize}
+		\item \textbf{Definition:} Obesity is defined as weight-for-length >95th percentile based on the CDC gender-specific weight-for-length reference for children less than 2 years of age and Body Mass Index (BMI)-for-age >95th percentile for children 2 to 20 years of age based on the CDC gender-specific BMI-for-age reference \cite{mei1998increasing}.
+		
+		\item \textbf{Public Health Impact:} Obesity may indicate excess energy intake, low energy expenditure or both \cite{PedNSS}. Health problems associated with childhood obesity among children over the age of 2 include high blood pressure, high cholesterol, glucose intolerance, orthopedic disorders, and psycho social disorders and possible overweight and obesity in adulthood \cite{lobstein2004obesity}, \cite{weiss2004obesity}.
+		
+		\item \textbf{Formula:} 
+			\begin{equation} 
+		UPCUF = \frac{N}{D} *100	
+			\end{equation} 
+
+Where: \\
+	OPUF = Obesity Prevalence Among Children Under Five Years\\
+			
+			N = Number of children under five year of age above the 95th percentiles of their adequate weight for WIC data\\
+			N = Number of children under five year with ICD-9 code 278 – 278.8 for ASES data\\
+			
+			D = Total number of children under five with adequate weight\\
+		
+		\item \textbf{Data Source:} WIC or ASES or Private Health Insurance Companies
+	\end{itemize}
+
+%% #
+		\subsubsection{Obesity Prevalence Among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:} This indicator identifies the prevalence of adults who are obese. The indicator comes from the BRFSS survey.
+		
+		\item \textbf{Public Health Impact:} A 2000 study of mortality rates related to weight revealed that in the U.S. "obesity (BMI 30) was associated with 111,909 excess deaths (95\% confidence interval)" \cite{flegal2005excess}. According to WHO, obesity and overweight have been linked to 44\% of diabetes cases, 23\% of ischemic heart disease cases and 7 to 41\% of certain cancers worldwide \cite{mathers2009global}. 
+		
+		\item \textbf{Formula:} 
+			\begin{equation}
+				ObPaA = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			ObPaA = Obesity Prevalence Among Adults \\
+			
+			N = Weighted number of adults that were classified as obese in the BRFSS BMI calculated variable during the survey year \\
+			
+			D = Total weighted number of adults during the survey year \\
+
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance System (BRFSS). 
+	\end{itemize}
+
+%% #
+		\subsubsection{Overweight Prevalence Among Children Under Five Years} 
+	\begin{itemize}
+		\item \textbf{Definition:}  Overweight, a growth indicator, is the weight over and above what is required or allowed \cite{merriam2004merriam}. BMI-for-age between the 85th and 95th percentile (CDC). This indicator measures the prevalence of children under five who are overweight. 
+		
+		\item \textbf{Public Health Impact:}  Individuals who are at a healthy weight are less likely to develop chronic disease risk factors, such as high blood pressure and dyslipidemia, develop chronic diseases, such as type 2 diabetes, heart disease, osteoarthritis, and some cancers, experience complications during pregnancy, or die at an earlier age \cite{wyatt2006overweight} \cite{williams2005health} \cite{kopelman2007health} \cite{van1985health}.
+		\item \textbf{Formula:} 
+			\begin{equation} 
+		OwPUF = \frac{N}{D} *100	
+			\end{equation} 
+
+Where: \\
+	OPUF = Overweight Prevalence Among Children Under Five Years\\
+			
+			N = Number of children under five year of age between the 85th and the 95th percentiles of their adequate weight for WIC data\\
+			N = Number of children under five year with ICD-9 code 278 – 278.8 for ASES data\\
+			
+			D = Total number of children under five with adequate weight\\
+		
+		\item \textbf{Data Source:} WIC or ASES or Private Health Insurance Companies
+\end{itemize}
+
+%% #
+		\subsubsection{Overweight Prevalence Among Adults} 
+	\begin{itemize}
+		\item \textbf{Definition:}  Overweight, a growth indicator, is the weight over and above what is required or allowed \cite{merriam2004merriam}. This indicator measures the prevalence of adults who are overweight. The indicator comes from the BRFSS survey.
+		
+		\item \textbf{Public Health Impact:}  Individuals who are at a healthy weight are less likely to: Develop chronic disease risk factors, such as high blood pressure and dyslipidemia, develop chronic diseases, such as type 2 diabetes, heart disease, osteoarthritis, and some cancers, experience complications during pregnancy, or die at an earlier age \cite{wyatt2006overweight} \cite{williams2005health} \cite{kopelman2007health} \cite{van1985health}. Obesity among adults has been associated with a lower quality of life \cite{larsson2002impact}, \cite{jia2005impact}.
+		\item \textbf{Formula:} 
+
+			\begin{equation}
+				OPaA = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			OPaA = Overweight Prevalence Among Adults \\
+			
+			N = Weighted number of adults that were classified as overweight in the BRFSS BMI calculated variable during the survey year \\
+			
+			D = Total weighted number of adults during the survey year \\
+
+		\item \textbf{Data Source:} Behavioral Risk Factor Surveillance System (BRFSS). 
+	\end{itemize}
+ 
+%% #
+		\subsubsection{Child Anemia Prevalence} 
+	\begin{itemize}
+		\item \textbf{Definition:} A condition in which the blood is deficient in red blood cells, in hemoglobin, or in total volume. \cite{merriam2004merriam}.  This indicator measures the prevalence of anemia among children under 5 years old. 
+		\item \textbf{Public Health Impact:} Iron deficiency is associated with developmental delays and behavioral disturbances in children \cite{idjradinata1993reversal}. In pregnant women, iron deficiency increases the risk for a pre-term delivery and delivering a low-birth weight baby. \cite{looker1997prevalence}
+		
+		
+		\item \textbf{Measure:} Child Anemia Prevalence 
+			\begin{equation}
+				PAnem = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			PAnem = Child Anemia Prevalence \\
+			
+			N = Number of children from 6 month of age to 17 year of age with low hemoglobin (Hb) or hematocrit (Hct) through January 1 to December 31 and in a specified population. \\
+			
+			D = Total number of children with Hb or Hct measure in a specified time period and population. \\
+
+\textbf{Note:} Age- and sex-specific cutoff values for anemia are based on the 5th percentile from
+  the third National Health and Nutrition Examination Survey (NHANES III), which
+  excluded persons who had a high likelihood of iron deficiency.  
+The following cutoff points to identify Child Anemia Prevalence:
+	\begin{itemize}
+		\item children 1 to 2 year of age: Hb concentration less than 11 g/dl or Hct concentration less than 32.9%
+		\item children aged 2 to less than 5 years: Hb concentration is less than 11.1 g/dL or their Hct level is less than 33.0%
+		\item children aged 5 to less than 8 years: Hb concentration is less than 11.5 g/dL or their Hct level is less than 34.5%
+		\item children aged 8 to less than 12 years: Hb concentration is less than 11.9 g/dL or their Hct level is less than 35.4%
+		\item Hb and Hct need to be adjusted for altitude.
+		\item For other ages refer to Looker, 1997 Table 6. \cite{looker1997prevalence}
+	\end{itemize}
+
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+\subsubsection{Women Fully Breastfeeding}
+\begin{itemize}
+		\item \textbf{Definition:} Of women who participated in Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), this indicator describes the total (or rate) of participants who breastfed their infants (only breastfeeding without supplementing with baby formula). 
+		\item \textbf{Public Health Impact:} A UK study of hospitalizations revealed that breastfeeding reduced the risk of hospitalization of infants for diarrhea and lower respiratory tract infection \cite{quigley2007breastfeeding}. The study showed that exclusive breastfeeding (not supplemented by formula) has a higher protective effect than partial breastfeeding (supplemented with formula) \cite{quigley2007breastfeeding}. A U.S. study found that breastfeeding is associated with a reduced risk for post neonatal death \cite{chen2004breastfeeding}. Finally, studies associate breastfeeding with better cognitive development in infants and children, higher cognitive development scores than those who were fed formula \cite{anderson1999breast}. 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				WFB = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			WFB = Women Fully Breastfeeding \\
+			
+			N = Number of women participant at WIC program that fully breastfed during the child first year of life \\
+			
+			D = Number of women participant at WIC program \\
+			
+		\item \textbf{Data Source:} WIC 
+	\end{itemize}
+
+\subsubsection{Women Partially Breastfeeding}
+\begin{itemize}
+		\item \textbf{Definition:} Of women who participated in Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), this indicator describes the total (or rate) of participants who breastfeed their infants part of the time, and also supplement with baby formula. 
+		\item \textbf{Public Health Impact:} A UK study of hospitalizations revealed that breastfeeding reduced the risk of hospitalization of infants for and lower respiratory tract infection. The study showed that exclusive breastfeeding (not supplemented by formula) has a higher protective effect than partial breastfeeding (supplemented with formula) \cite{quigley2007breastfeeding}. A U.S. study found that breastfeeding is associated with a reduction in risk for post neonatal death \cite{chen2004breastfeeding}. Finally, studies associate breastfeeding with better cognitive development in infants and children, higher cognitive development scores than those who were fed formula \cite{anderson1999breast}. 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				WPB = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			WPB = Women Partially Breastfeeding \\
+			
+			N = Number of women participant at WIC program that partially breastfed during child first year of life during the survey period \\
+			
+			D = Number of women participant at WIC program \\
+			
+			
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+\subsubsection{Total Breastfeeding Women}
+\begin{itemize}
+		\item \textbf{Definition:} Of women who participated in Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), this indicator describes the total participants who breastfeed their infants fully and those who breastfeed their infants partially. 
+		\item \textbf{Public Health Impact:} A UK study of hospitalizations revealed that breastfeeding reduced the risk of hospitalization of infants for diarrhea and lower respiratory tract infection. The study showed that exclusive breastfeeding (not supplemented by formula) has a higher protective effect than partial breastfeeding (supplemented with formula) \cite{quigley2007breastfeeding}. A U.S. study found that breastfeeding is associated with a reduction in risk for post neonatal death \cite{chen2004breastfeeding}. Finally, studies associate breastfeeding with better cognitive development in infants and children, higher cognitive development scores than those who were fed formula \cite{anderson1999breast}. 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				TBW = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			TBW = Total Breastfeeding Women \\
+			
+			N = Number of women participant at WIC program that partially or fully breastfed at first year of the child life during the survey period \\
+			
+			D = Number of women participant at WIC program \\
+			
+			
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+\subsubsection{Infants Fully Breastfed}
+\begin{itemize}
+		\item \textbf{Definition:} Of infants who participated in Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), this indicator describes the number of infants who were fully breastfed (not supplemented with formula).
+		\item \textbf{Public Health Impact:} A UK study of hospitalizations revealed that breastfeeding reduced the risk of hospitalization of infants for diarrhea and lower respiratory tract infection. The study showed that exclusive breastfeeding (not supplemented by formula) has a higher protective effect than partial breastfeeding (supplemented with formula) \cite{quigley2007breastfeeding}. A U.S. study found that breastfeeding is associated with a reduction in risk for post neonatal death \cite{chen2004breastfeeding}. Finally, studies associate breastfeeding with better cognitive development in infants and children, higher cognitive development scores than those who were fed formula \cite{anderson1999breast}. 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				IFB = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			IFB = Infant Fully Breastfed \\
+			
+			N = Number of children participant at WIC program that were fully breastfed at first year of life during the survey period\\
+			
+			D = Number of children participant at WIC program \\
+			
+			
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+\subsubsection{Infants Partially Breastfed}
+\begin{itemize}
+		\item \textbf{Definition:} Of infants who participated in Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), this indicator describes the number of infants who were partially breastfed (breastfed and supplemented with formula).
+		\item \textbf{Public Health Impact:} A UK study of hospitalizations revealed that breastfeeding reduced the risk of hospitalization of infants for diarrhea and lower respiratory tract infection. The study showed that exclusive breastfeeding (not supplemented by formula) has a higher protective effect than partial breastfeeding (supplemented with formula) \cite{quigley2007breastfeeding}. A U.S. study found that Breastfeeding is associated with a reduction in risk for post neonatal death \cite{chen2004breastfeeding}. Finally, studies associate breastfeeding with better cognitive development in infants and children, higher cognitive development scores than those who were fed formula \cite{anderson1999breast}. 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				IPB = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			IPB = Infant Partially Breastfed \\
+			
+			N = Number of children participant at WIC program that were fully breastfed at first year of life during the survey period\\
+			
+			D = Number of children participant at WIC program during the survey period\\
+			
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+\subsubsection{Infants Fully Formula Fed}
+\begin{itemize}
+		\item \textbf{Definition:} Of infants who participated in Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), this indicator describes the number of infants who were not formula-fed (not breastfed).
+		\item \textbf{Public Health Impact:} A UK study of hospitalizations revealed that breastfeeding reduced the risk of hospitalization of infants for diarrhea and lower respiratory tract infection. The study showed that exclusive breastfeeding (not supplemented by formula) has a higher protective effect than partial breastfeeding (supplemented with formula) \cite{quigley2007breastfeeding}. A U.S. study found that Breastfeeding is associated with a reduction in risk for post neonatal death \cite{chen2004breastfeeding}. Finally, studies associate breastfeeding with better cognitive development in infants and children, higher cognitive development scores than those who were fed formula \cite{anderson1999breast}. 
+		\item \textbf{Survey Question:}
+		\item \textbf{Formula:} 
+			\begin{equation}
+				IFFF = \frac{N}{D} *100
+			\end{equation}
+Where: \\
+			IFFF = Infants Fully Formula Fed \\
+			
+			N = Number of children participant at WIC program that were formula fed at first year of life during the survey period \\
+			
+			D = Number of children participant at WIC program during the survey period \\
+			
+		\item \textbf{Data Source:} WIC
+	\end{itemize}
+
+
+\subsubsection{Table of Nutrition \& Physical Activity Health Related Effects Surveillance Indicators}
+	
+The table of Nutrition \& Physical Activity Health Related Effects Surveillance Indicators that follows is a strategy to summarize the information presented in the previous section as a way to provide the reader an alternative way to access the content of this document.
+
+
+\newpage
+\begin{landscape}
+\begin{longtable}{|
+>{\raggedright\arraybackslash}p{.40\textwidth}|
+>{\raggedright\arraybackslash}p{.15\textwidth}|
+>{\raggedright\arraybackslash}p{.10\textwidth}|
+>{\raggedright\arraybackslash}p{.08\textwidth}|
+>{\raggedright\arraybackslash}p{.50\textwidth}|}
+\caption{Table of Nutrition \& Physical Activity Health Related Effects Surveillance Indicators}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline
+\endfirsthead
+\caption[]{Table of Nutrition \& Physical Activity Health Related Effects Surveillance Indicators (continue)}
+\hline
+\textbf{TI (Prevalence)} & \textbf{DS} & \textbf{SI} & \textbf{DTC} & \textbf{Goal} \\ 
+\hline 
+\endhead % all the lines above this will be repeated on every page
+% row 5
+\textbf{Low Birth weight Prevalence for Children Under Five Years} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Reduce low birth weight (LBW) to 7.8 percent (down from 8.2 percent in 2007) \cite{Healthymaternal}. \\ 
+\hline
+% row 6
+\textbf{High Birth weight Prevalence for Children Under Five Years} 
+& WIC
+& Yes
+& Yearly
+& NA \\ 
+\hline
+% row 6
+\textbf{Short Stature Prevalence Among Children Under Five Years} 
+& WIC
+& Yes
+& Yearly
+& NA \\ 
+\hline
+% row 6
+\textbf{Underweight Prevalence Among Children Under Five Years} 
+& WIC
+& Yes
+& Yearly
+& NA \\ 
+\hline
+% row 2
+\textbf{Obesity Prevalence Among Children Under Age Five} 
+& PRDOH, WIC
+& Yes 
+& Yearly 
+& Healthy People 2020: Reduce the proportion of children aged 2 to 5 years who are considered obese (BMI: ) to 9.6 percent from 10.7 percent in 2005-08 \cite{Healthynutritionweight}. \\ 
+\hline
+% row 3
+\textbf{Obesity Prevalence Among Adults} 
+& PRDOH, BRFSS, YBRFSS
+& Yes 
+& Yearly 
+& Healthy People 2020: Reduce the proportion of adults who are obese (BMI: ) to 30.5 percent from 33.9 percent in 2005-08 \cite{Healthynutritionweight}. \\ 
+\hline
+% row 1
+\textbf{Overweight Prevalence Among Children Under Five Years} 
+& PRDOH, WIC
+& Yes
+& Yearly 
+& NA \\ 
+\hline
+% row 1
+\textbf{Overweight Prevalence Among Adults} 
+& PRDOH, BRFSS
+& Yes
+& Yearly 
+& Healthy People 2020: Increase the proportion of adults that are at a healthy weight (BMI: 18.5-24.9) 33.9 percent from 30.8 percent in 2005-08 \cite{Healthynutritionweight}.\\ 
+\hline
+% row 8
+\textbf{Child Anemia Prevalence} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Reduce iron deficiency among children aged 1 to 2 years to 14.3 percent from 15.9 percent in 2005-08 . Reduce iron deficiency among children aged 3 to 4 years to 4.3 percent from 5.3 percent in 2005-08 \cite{Healthynutritionweight}. \\ 
+\hline
+% row 4
+\textbf{Women Fully Breastfeeding} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of infants who are breastfed exclusively through 3 months to 46.2 percent (from 33.6 percent in 2006). Healthy People 2020: Increase the proportion of infants who are breastfed exclusively through 6 months to 25.5 percent (from 14.1 percent in 2006) \cite{Healthymaternal}.  \\ 
+\hline
+% row 5
+\textbf{Women Partially Breastfeeding} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of infants who are ever breastfed to 81.9 percent (from 74 percent in 2006) \cite{Healthymaternal}. \\ 
+\hline
+% row 6
+\textbf{Total Breastfeeding Women} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of infants who are ever breastfed to 81.9 percent (from 74 percent in 2006) \cite{Healthymaternal}. \\ 
+\hline
+% row 7
+\textbf{Infants Fully Breastfed} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of infants who are breastfed exclusively through 3 months to 46.2 percent (from 33.6 percent in 2006). Healthy People 2020: Increase the proportion of infants who are breastfed exclusively through 6 months to 25.5 percent (from 14.1 percent in 2006) \cite{Healthymaternal}.\\ 
+\hline
+% row 8
+\textbf{Infants Partially Breastfed} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of infants who are ever breastfed to 81.9 percent (from 74 percent in 2006) \cite{Healthymaternal}. \\ 
+\hline
+% row 9
+\textbf{Infants Fully Formula Fed} 
+& WIC
+& Yes
+& Yearly
+& Healthy People 2020: Increase the proportion of infants who are ever breastfed to 81.9 percent (from 74 percent in 2006) \cite{Healthymaternal}. \\ 
+\hline
+
+\end{longtable}
+\end{landscape}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   NEW PAGE  Data Source Contat %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Architecture}
+
+This section presents the architecture of the SISVANAF-PR.  The architecture provides the essential elements and components to develop, implement and sustain this a continuous and standard operation of the surveillance system. The following section explains topics such as computer software selected for data management, analysis and reporting; source, methods and time period of data collection, population under surveillance; and ways to access the information. 
+
+%%%
+\subsection{Operating System and Software}
+
+The core of the SISVANAF-PR development, implementation and sustainability lies in two computer languages and the skills of the surveillance team.  The two computer languages to be used are R for data management and analysis and \LaTeX  for typesetting.  The architecture has been designed to work with as less software as possible to accomplish one of the surveillance attributes, simplicity. Nonetheless, high skilled professionals are needed to adequately use those software to develop and support this surveillance system on a continuous basis.  Combining R and \LaTeX provides a powerful, flexible and cost-effective tool that allows the authorized agency to execute the whole process of data management, analysis, interpretation and reporting in a standard and consistent design.  The creation of the surveillance system in this manner produces a structured work flow that point-and-click tools are not capable of providing. For R and \LaTeX advantages and disadvantages read sections 8.1. and 8.2 respectively.
+
+The expertise of the surveillance team must make the computational procedures efficient, fast, scalable and stable.  In addition, a high level of epidemiological and biostatistical knowledge is necessary to, with those languages, precisely compute and adequately interpret the indicator to be surveyed. To increase the efficiency of working procedures, two Integrated Development Environment (IDE) software will be used, RStudio and TexMaker. 
+
+Nowadays, the Internet facilitates the exchange of information. To access its contents,
+Mozilla Firefox has been selected as a web browser.  During the developmental stages, other software will assist on various tasks. Software such as Git, Libre Office, Umlet, FreeMind, ProgReg databases, among others, will be mentioned in the software section. All software are open source, free of cost and stable, providing surveillance permanence and cost-effectiveness.
+
+In conclusion, the design of this surveillance system has been thought-out to be as cost-effective and as simple as possible. Basically, with a computer and two open source, cross-platform languages (R and \LaTeX) with its packages, it is possible to implement and sustain SISVANAF-PR.
+%%%
+\subsubsection{Operating System}
+ An Operating system (OS) is the low-level software which handles the interface to the peripheral hardware, schedules tasks, allocates storage, and presents a default interface to the user when no application program is running. \cite{howe2010foldoc}
+
+There are many operating systems but the most known are Linux, Macintosh (MAC) and Microsoft Windows. The SISVANAF-PR will be developed using a distribution of Linux OS [web site: http://www.linux.org/] known as Ubuntu [web site: http://www.Ubuntu.com/]. There are many distributions of Linux and some of them are for specific purposes. Ubuntu will be used for development mainly because its interface is polished and intuitive and because of the availability of a very convenient software center. 
+
+The surveillance system will be developed on a cross-platform (performed on Linux, Windows and Mac operating systems) because the computational programming and the selection of software in which SISVANAF-PR will be designed are cross-platform.  Outcome Project strongly recommends, to safeguard the long-term stability of the system, that SISVANAF-PR should be run using a Linux based Operating System.
+
+\subsubsection{Software}
+ 
+This section features the software and their avails that will be used to develop, implement and sustain SISVANAF-PR. A software or computer program is made up of the instructions executed by a computer, as opposed to the physical device on which they run (the "hardware"). \cite{howe2010foldoc}
+
+\begin{itemize}
+
+\item \textbf{R:} R is a language and environment used for statistical analysis and graphics. The base of R is developed by a core team. \cite{Rlanguage} R usefulness has been explained previously in this section and its advantages and disadvantages are exhibit in section 10.1.
+
+\item \textbf{R packages}:
+
+R packages extend the capabilities of R beyond its base implementation. As of December 24, 2013 there were 5,048 packages with different objectives developed around the world and submitted to a Comprehensive Archive Network for R (CRAN). CRAN is a network of FTP (File Transfer Protocol) and web servers around the world that store identical, up-to-date, versions of code and documentation for R.  Packages contribution makes R a robust environment for its purposes. \cite{Rlanguage}
+
+The R packages mentioned below will be used during different stages of the SISVANAF-PR development and implementation.
+
+\begin{itemize}
+
+\item \textbf{Hmisc:} Harrell Miscellaneous \cite{Harrell2013Hmisc}
+	
+Main documentation: http://cran.r-project.org/web/packages/Hmisc/index.html)
+The Hmisc package contains many functions useful for data analysis, high-level graphics, utility operations, functions for computing sample size and power, importing data sets, imputing missing values, advanced table making, variable clustering, character string manipulation, conversion of S objects to LaTeX code, and recording variables.
+
+\item \textbf{rms:} Regression Modeling Strategies \cite{Harrell2013rms}
+
+Main documentation: http://cran.r-project.org/web/packages/rms/index.html
+
+Regression Modeling Strategies (rms) provides regression modeling, testing, estimation, validation, graphics, prediction, and typesetting by storing enhanced model design attributes in the fit. rms is a collection of functions that assist with streamline modeling. It also contains functions for binary and ordinal logistic regression models, ordinal models for continuous Y with a variety of distribution families and the Buckley-James multiple regression model for right-censored responses. rms also implements penalized maximum likelihood estimation for logistic and ordinary linear models. rms works with almost any regression model, but it was especially written to work with binary or ordinal regression models, Cox regression, accelerated failure time models, ordinary linear models, the Buckley-James model, generalized least squares for serially or spatially correlated observations, generalized linear models, and quantile regression. 
+
+\item \textbf{ggplot2:} An implementation of the Grammar of Graphics \cite{wickham2009ggplot2}
+	
+Main documentation: http://cran.r-project.org/web/packages/ggplot2/index.html
+
+ggplot2 is an implementation of the grammar of graphics in R. It combines the advantages of both base and lattice graphics: conditioning and shared axes are handled automatically, and you can still build up a plot step by step from multiple data sources. It also implements a sophisticated multidimensional conditioning system and a consistent interface to map data to aesthetic attributes. 
+	
+\item \textbf{reshape2:} Flexibly reshape data \cite{wickham2007reshape2}
+
+Main documentation: http://cran.r-project.org/web/packages/plyr/index.html
+
+Reshape allows the user flexibly to restructure and aggregate data using just two functions: melt and cast. 
+	
+\item \textbf{plyr:} plyr provides tools for splitting, applying and combining data \cite{wickham2011plyr}
+
+Main documentation: http://cran.r-project.org/web/packages/plyr/index.html
+
+plyr is a set of tools that solves a common set of problems: the program allows the user to break a big problem down into manageable pieces, operate on each piece and then put all the pieces back together. 
+
+\item \textbf{survey:} Analysis of complex survey samples \cite{lumley2004analysis}
+
+Main documentation: http://cran.r-project.org/web/packages/survey/index.html
+
+The program includes summary statistics, two-sample tests, generalized linear models, cumulative link models, Cox models, loglinear models, and general maximum pseudo-likelihood estimation for multistage stratified, cluster-sampled, unequally weighted survey samples. The software also includes variances by Taylor series linearisation or replicate weights, post-stratification, calibration, and raking, two-phase sub sampling designs, graphics, predictive margins by direct standardization, PPS sampling without replacement, principal components, and factor analysis.
+
+\item \textbf{RPostgreSQL:} R is the interface for the PostgreSQL database system and PostgreSQL is the driver for R. 
+
+Main documentation: http://cran.r-project.org/web/packages/RPostgreSQL/index.html)
+
+This package provides a Database Interface (DBI) compliant driver for R to access PostgreSQL database systems. In order to build and install this package from source, PostgreSQL itself must be present for the system to provide PostgreSQL functionality via its libraries and header files. These files are provided as postgresql-devel package under some Linux distributions. On Microsoft Windows system the attached libpq library source will be used. A wiki and issue tracking system for the package are available at Google Code at https://code.google.com/p/rpostgresql/ . 
+
+\item \textbf{knitr:} Elegant, flexible and fast dynamic report generation with R. \cite{xie2013knitr}
+
+Main documentation: http://yihui.name/knitr/
+
+The knitr package was designed to be a transparent engine for dynamic report generation with R. This package provides a general-purpose tool for dynamic report generation in R, which can be used to deal with any type of (plain text) files, including Sweave, HTML, Markdown, reStructuredText and AsciiDoc. The patterns of code chunks and inline R expressions can be customized. R code is evaluated as if it were copied and pasted in an R terminal thanks to the evaluate package (e.g. the user does not need to explicitly print plots from ggplot2 or lattice). R code can be reformatted by the formatR package so that long lines are automatically wrapped, with indent and spaces being added, and comments being preserved. A simple caching mechanism is provided to cache results from computations for the first time and the computations will be skipped the next time. Almost all common graphics devices, including those in base R and add-on packages like Cairo, cairoDevice and tikzDevice, are built-in with this package and it is straightforward to switch between devices without writing any special functions. The width and height as well as alignment of plots in the output document can be specified in chunk options (the size of plots for graphics devices is still supported as usual). Multiple plots can be recorded in a single code chunk, and it is also allowed to rearrange plots to the end of a chunk or just keep the last plot. Warnings, messages and errors are written in the output document by default (can be turned off). Currently LaTeX, HTML, Markdown and reST are supported, and other output formats can be supported by hook functions. The large collection of hooks in this package makes it possible for the user to control almost everything in the R code input and output. Hooks can be used either to format the output or to run a specified R code fragment before or after a code chunk. The language in code chunks is not restricted to R only (there is simple support to Python and Awk, etc). Many features are borrowed from or inspired by Sweave, cacheSweave, pgfSweave, brew and decumar.  
+\end{itemize}
+
+\item \textbf{{\TeX} Typesetting Language}
+
+TeX is an extremely powerful macro-based text formatter written by Donald Knuth, very popular in academia, especially in the computer-science community. The program has been so successful as to have out-competed Unix troff, the other favored formatter, even at many Unix installations \cite{howe2010foldoc}.  The first version of Tex was released in 1978.  Together with the Metafont language for font description and the Computer Modern family of typefaces, TeX was designed with two main goals in mind: to allow anybody to produce high-quality books using a reasonably minimal amount of effort, and to provide a system that would give exactly the same results on all computers, now and in the future. \cite{gaudeul2007open}
+In his memo to the Dutch TeX Users Group conference in 1990, inventor Donal Knuth stated ``Let us regard these systems as fixed points, which should give the same results 100 years from now that they produce today" \cite{Knuth1990TFoTex}. Moreover, the value of the TeX language to the surveillance system architecture is that its provides quality and stability.
+TeX is a popular means by which to typeset complex mathematical formula; it has been noted as one of the most sophisticated digital typographical systems in the world. \cite{gaudeul2007open}
+
+\item \textbf{{\LaTeX}:} http://www.latex-project.org/
+
+An implementation of the TeX and Metafont languages.
+
+\item \textbf{Bib{\TeX}:}
+Bib{\TeX} is a TeX extension package for bibliographic citations, distributed with \LaTeX. BibTeX uses a style-independent bibliography database (.bib file) to produce a list of sources, in a customization style, from citations in a Latex document. It also supports some other formats. 
+Bib{\TeX} is a separate program from \LaTeX. \LaTeX  writes information about citations and which .bib files to use in a ``.aux" file. Bib{\TeX} reads this file and outputs a ``.bbl" file containing \LaTeX  commands to produce the source list. You must then run \LaTeX again to incorporate the source list in your document. Bib{\TeX} is described further in the \LaTeX book by Lamport. \cite{howe2010foldoc}
+
+The BibTeX web page is http://www.bibtex.org/
+
+\item \textbf{Git} fast version control system \cite{chacon2009pro}
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Revision control, also known as version control and source control (and an aspect of software configuration management), is the management of changes to documents, computer programs, large web sites, and other collections of information. Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, the resulting set is "revision 2", and so on. Each revision is associated with a time stamp and the person making the change. Revisions can be compared, restored, and with some types of files, merged.
+
+\item \textbf{PostgreSQL} Data base (http://www.postgresql.org/)
+
+PostgreSQL is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. It runs on all major operating systems, including Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), and Windows. It is fully ACID compliant, has full support for foreign keys, joins, views, triggers, and stored procedures (in multiple languages). It includes most SQL:2008 data types, including INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, and TIMESTAMP. It also supports storage of binary large objects, including pictures, sounds, or video. It has native programming interfaces for C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, among others, and exceptional documentation. (ref: http://www.postgresql.org/about/)
+
+\end{itemize}
+
+%%%
+\subsubsection{Data Collection}
+
+Data, a collection of items of information, is the primary material of a surveillance system. Establishing the adequate data set for the surveillance goals is a difficult task.  One of the ways to nurture a surveillance system of data is by designing, validating and conducting the institution's own survey.  An advantage is that a diverse array of data can be easily retreived via institutions and the web.  Furthermore, it is more cost-effective to integrate the surveillance system in design with other systems or data bases by collaborating with other credible institutions that are collecting data pertinent for the stated intentions.  As part of the SISVANAF-PR designing process, Outcome Project has extensively searched for available data sources.
+
+Some sources of data that we have identified are already accessible through web sites and easily obtained by downloading and saving them to a specific folder or data base system. Other institutions will need to make their data accessible to a web site or provide the information by setting up a file transfer protocol (ftp).
+
+As we expect that some data providers have different methods of retrieving, managing and guarding their data (eg. survey designs and computer systems) different data format will emerge. To overcome this apparent complexity, SISVANAF-PR will use two strategies. First, the data management and analysis software (R) will contain various R packages designed to import a diverse set of data formats (.csv, ASCII, .xlsx) to .RData format. In addition, will be coordinate with local institutions to export their data into a .csv and transfer it via a file transfer protocol .  An .csv is a standard data format that every data management software have the capacity to export.
+
+The following section presents a list of the data sources that will be used to nurture SISVANAF-PR. The list contains the data collection tool or survey, the institution responsible for collecting the data in a consistent and standard manner, the measure that will be obtained from this source, the population under surveillance, the method to access the data and the period of data collection.
+
+\subsection{Data Sources:}
+
+\begin{enumerate}
+
+%%%%%%%%%%%%%%%%%%%
+\item \textbf{Data collection tool:} Behavioral Risk Factor Surveillance System (BRFSS)  
+\\In 1984, the Centers for Disease Control and Prevention (CDC) initiated the state-based Behavioral Risk Factor Surveillance System (BRFSS)--a cross-sectional telephone survey that state health departments conduct on a monthly basis over land-line and cellular telephones with a standardized questionnaire and technical and methodological assistance from CDC. 
+	In 2011, more than $500,000$ interviews were conducted in the states, the District of Columbia, and participating U.S. territories and other geographic areas.
+(ref: http://www.cdc.gov/brfss/data\_documentation/index.html)
+	
+	\textbf{Institution:} Center for Diseases Control and Prevention (CDC), Behavioral Risk Factor Surveillance Program
+	
+	\textbf{Measure:} Prevalence
+
+	\textbf{Population:} Adult (18 year of age and above) U.S. residents regarding their risk behaviors and preventive health practices that can affect their health status.
+
+	\textbf{Data access:} The BRFSS data can be obtained at the following web page:\\
+	 http://www.cdc.gov/brfss/annual\_data/annual\_data.htm.
+ The CDC makes the BRFSS data available approximately 7 months after the end of every survey year. The data can be obtained in .ascii and various SAS system formats. As BRFSS methods and questionnaires could change, the surveillance personnel should be aware of the yearly documentation procedures. The documentation provides technical and statistical information regarding the BRFSS, such as comparability, sample information, and more.
+		
+	\textbf{Period of data collection:}  Yearly
+
+%%%%%%%%%%%%%%%%%%%
+\item \textbf{Data collection tool:} Youth Risk Behavior Surveillance System (YRBSS)
+\\The Youth Risk Behavior Surveillance System (YRBSS) monitors six types of health risk behaviors that contribute to the leading causes of death and disability among youth and young adults, including behaviors that contribute to unintentional injuries and violence, sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases, including HIV infection, alcohol and other drug use, tobacco use,  unhealthy dietary behaviors, inadequate physical activity and obesity. (ref: http://www.cdc.gov/HealthyYouth/yrbs/index.htm)	
+
+	\textbf{Institution:} Center for Diseases Control and Prevention (CDC), Behavioral Risk Factor Surveillance Program.
+
+	\textbf{Measure:} Prevalence
+
+	\textbf{Population:} Youth and young adults (17 year of age and below) U.S. residents
+
+	\textbf{Data access:} The YRBS data can be obtained at the following web page:\\
+	http://www.cdc.gov/healthyyouth/yrbs/data/index.htm. The CDC makes available the BRFSS data approximately 7 months after the end of every survey year. The data can be obtained in a .ascii file. As YRBS methods and questionnaires could change, the surveillance personnel should be aware of the yearly documentation. The documentation provides technical and statistical information regarding the BRFSS, such as comparability, sample information, and more.
+
+	\textbf{Period of data collection:}  Yearly
+
+%%%%%%%%%%%%%%%%%%%
+\item \textbf{Data collection tool:} National Vital Statistics System (NVSS) via Death Certificate
+
+	\textbf{Institution:} Puerto Rico Demographic Registry and Center for Diseases Control and Prevention, National Center for Health Statistics. The National Vital Statistics System is the oldest and most successful example of intergovernmental data sharing in public health and the shared relationships, standards, and procedures form the mechanism by which NCHS collects and disseminates the nation's official vital statistics. 
+These data are provided through contracts between NCHS and vital registration systems operated in the various jurisdictions legally responsible for the registration of vital events such as births, deaths, marriages, divorces, and fetal deaths. (ref: http://www.cdc.gov/nchs/nvss.htm)
+
+	\textbf{Measure:} Death
+
+	\textbf{Population:} All population
+
+	\textbf{Data access:} Mortality data for Puerto Rico can be obtained at the following web page:
+http://www.cdc.gov/nchs/data\_access/Vitalstatsonline.htmno.Mortality\_Multiple.
+ Although NVSS methods are less suitable to change than other sources, the surveillance personnel must be aware of possible changes in methods.  The most notable changes are the variations in International Codes of Diseases across time.
+
+	\textbf{Period of data collection:} The data is collected daily but availability of the information is delayed to every two (2) to three (3) years.
+
+%%%%%%%%%%%%%%%%%%%
+\item	\textbf{Data collection tool:} Health Insurance Claims
+
+	\textbf{Institution:} ASES, HUMANA, MCS, Triple-S, COSVI
+
+	\textbf{Measure:} Use of health services prevalence
+
+	\textbf{Population:} Insured of all ages
+
+	\textbf{Data access:} Via a file transfer protocol (ftp) upon agreement and memorandum of understanding with the institutions. Ftp transfer is a secure an adequate option.
+
+	\textbf{Period of data collection:}  Yearly
+	
+%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Data collection tool:} Pediatric and Pregnancy Nutrition Surveillance System (PedNSS)
+
+	\textbf{Institution:} U.S. Center for Disease Control and Prevention
+
+	\textbf{Measure:} birth-weight, anemia, short stature, underweight, overweight, and obesity
+
+	\textbf{Population:} Low-income children below 5 years old participating in federally funded maternal and child health programs (Women, Infants and Children Program; Supplemental Nutrition Assistance Program, etc). 
+
+	\textbf{Data access:} http://www.cdc.gov/pednss/
+
+\textbf{Period of data collection:}  The latest data available is from 2011, and will be discontinued. Data that was collected with PedNSS will now be collected and maintained by The Special Supplemental Nutrition Program for Women, Infants, and Children (WIC).
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Data collection tool:} Puerto Rico Department of Agriculture
+
+	\textbf{Institution:} Puerto Rico Department of Agriculture
+
+	\textbf{Measure:} Growth rate and availability of agricultural products, consumption of locally produced agricultural products
+	
+	Explore the following information to be added in the indicators in the indicator sections in the table guide document.
+% 	\newpage
+% 	\includepdf[pages={1}]{/media/truecrypt2/ORP2/SISVANAF_PR/SISVAN_literature/Dept_Agriculture/TasaCrecimientoProduccionAgricola.pdf}
+% 	
+% 	\newpage
+% 	\begin{landscape}
+% 	\includepdf[pages={1}]{/media/truecrypt2/ORP2/SISVANAF_PR/SISVAN_literature/Dept_Agriculture/ResumenConsumo2010.pdf}
+% 	\end{landscape}
+% 	
+		\textbf{Data access:}  http://www.agricultura.pr.gov/ Encuestas de la Oficina de Estadisticas Agricolas, Departamento de Agricultura External Trade Statistics 2010, Junta de Planificacion de Puerto Rico.
+\textbf{Period of data collection:}  yearly
+	
+%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Data collection tool:} The U.S. Current Population Survey (CPS) U.S. Household Food Security Survey
+
+	\textbf{Institution:} U.S. Census Bureau
+
+	\textbf{Measure:} food access and severity of food insecurity
+
+	\textbf{Population:} All U.S. households (with one or more persons living in household), with children present and without children present. 
+
+	\textbf{Data access:} http://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/key-statistics-graphics.aspxno..UuR7PvbD-CQ.
+The survey is currently not conducted in Puerto Rico households.
+
+\end{enumerate}
+
+ \subsection{Data Security and Confidentiality}
+
+Every Surveillance System must secure the privacy and confidentiality of the individuals for which information is analyzed.  The Health Insurance Portability and Accountability Act (HIPPA) provides guidelines and standards for data management, analysis and dissemination of information through the use of unidentified data sets. \cite{act1996health}.  A major goal of the Privacy Rule is to assure that individual's health information is properly protected while allowing the flow of health information needed to provide and promote high quality health care and to protect the public's health and well being. The Rule strikes a balance that permits important uses of information, while protecting the privacy of people who seek care. Given that the health care marketplace is diverse, the Rule is designed to be flexible and comprehensive to cover the variety of uses and disclosures that need to be addressed. The Privacy Rule protects all ``individually identifiable health information" held or transmitted by a covered entity or its business associate, in any form or media, whether electronic, paper, or oral. The Privacy Rule calls this information ``protected health information (PHI)."
+
+The Standards for Privacy of Individually Identifiable Health Information (``Privacy Rule") established that health information data without identifier does not have restrictions on the use or disclosure. De-identified health information should neither identify nor provide a reasonable basis to identify an individual. The Privacy Rule mentions two ways to de-identify information; either: 
+1) a formal determination by a qualified statistician; or 
+2) the removal of specified identifiers of the individual and of the individual's relatives, household members, and employers is required, and is adequate only if the covered entity has no actual knowledge from the remaining information that could be used to identify the individual.
+\\The Standards for Privacy of Individually Identifiable Health Information (``Privacy Rule") establishes, for the first time, a set of national standards for the protection of certain health information. The U.S. Department of Health and Human Services (HHS) issued the Privacy Rule to implement the requirement of the Health Insurance Portability and Accountability Act of 1996 (HIPAA). 
+The Privacy Rule standards address the use and disclosure of individual's health information called ``protected health information" by organizations subject to the Privacy Rule called ``covered entities", as well as standards for individuals' privacy rights to understand and control how their health information is used. 
+
+Regarding public health activities, the Privacy Rule states that covered entities may disclose protected health information to: 
+(1) public health authorities authorized by law to collect or receive such information for preventing or controlling disease, injury, or disability and to public health or other government authorities authorized to receive reports of child abuse and neglect; 
+(2) entities subject to FDA regulation regarding FDA regulated products or activities for purposes such as adverse event reporting, tracking of products, product recalls, and post-marketing surveillance; 
+(3) individuals who may have contracted or been exposed to a communicable disease when notification is authorized by law; and 
+(4) employers, regarding employees, when requested by employers, for information concerning a work-related illness or injury or workplace related medical surveillance, because such information is needed by the employer to comply with the Occupational Safety and Health Administration (OHSA), the Mine Safety and Health Administration (MHSA), or similar state law. 30 See OCR Public Health Guidance; CDC Public Health and HIPAA Guidance.
+
+The information in this section was obtained from the government web site of the Office of Civil Rights at the U.S. Department of Health and Human Service.\\
+web site: http://www.hhs.gov/ocr/privacy/index.html
+	
+\subsubsection{Privacy Rule Procedures}
+
+SISVANAF-PR will collect unidentified (e.g. BRFSS) as well as identified data sets (e.g. HIC's data).  When a data set is delivered with identification, an algorithm to mask identification is established in partnership with the data provider. Then, only the de-identified data is used for analysis and dissemination purposes.  When information is stratified by demographic variables, SISVANAF-PR uses the CDC standard of not disclosing information when cells have an N of 50 or less.
+
+\subsection{Data Sharing and Information}
+This sub-section presents the CANPR processes of sharing data and information. CANPR will share information via the SISVANAF-PR web page.  As previously stated, all information used by this surveillance system will be de-identified and the use of the analysis will have the sole purpose of working toward SISVANAF-PR goals. SISVANAF-PR will not provide raw data.  Any institution seeking raw information must contact the data source institution. 
+
+%-
+%\subsection{Working Files and Folders}
+%This section established an archive of work accoplished in the creation of the SISVANAF-PR.
+%	
+%	\begin{enumerate}
+%		\item Archivo global
+%			\begin{enumerate}
+%				\item Archivo de datos
+%					\begin{itemize}
+%						\item Archivo de documentaci\'{o}n sobre los datos
+%						\item Archivo de gui\'{o}nes de manejo de datos
+%						\item Archivo de datos manejados
+%						\item Archivo de datos crudos
+%				\end{itemize}
+%
+%				\item Archivo de gui\'{o}nes de an\'{a}lisi
+%		
+%					\begin{itemize}
+%						\item Gui\'{o}nes descriptivos/exploratorios
+%						\item Gui\'{o}nes Anal\'{i}ticos (ej., Modelos multivariados)
+%			
+%			\end{itemize}
+%	
+%\item Archivo de figuras
+%\item Gui\'{o}nes para el reporte
+%\end{enumerate}
+
+\subsection{Diagram}
+
+% \begin{landscape}
+% \includepdf[pages={1}]{/media/truecrypt2/ORP2/SISVANAF_PR/Diagrams/SISVANAF_PR_Surv_Architecture.pdf}
+% \end{landscape}
+% 
+% \subsection{Mind Map}
+% 
+ \begin{landscape}
+ \includepdf[pages={1}]{/media/truecrypt2/ORP2/SISVANAF_PR/Mind_Map/SISVANAF_PDF.pdf}
+ \end{landscape}
+
+\newpage
+\subsection{Next Steps}
+\begin{enumerate}
+   
+\item Establish meetings with data provider agencies for data sharing and transfer.
+ 
+\item Begin phase 2: Development and implementation of SISVANAF-PR
+
+\end{enumerate}
+
+
+\section{Dissemination Strategies}
+Dissemination strategies are the core topic of the surveillance system development phase 3. The recommended immediate strategy to disseminate surveillance information is the creation of a web site that contains the SISVANAF-PR surveillance report. The format of the report could be both in .pdf or .html5.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Annex}
+
+%%%
+\subsection{R Advantages and Disadvantages}
+\textbf{ADVANTAGES}
+
+\begin{itemize}
+
+\item R is the most comprehensive statistical analysis package available. It incorporates all of the standard statistical tests, models, and analyses, as well as provides a comprehensive language for managing and manipulating data. New technology and ideas often appear first in R.
+
+\item R is a programming language and environment developed for statistical analysis by practicing statisticians and researchers. It reflects well on a very competent community of computational statisticians. R is now maintained by a core team of some 19 developers, including some very senior statisticians.
+
+\item Because R is open source, unlike closed source software, it has been reviewed by many internationally renowned statisticians and computational scientists.
+
+\item The graphical capabilities of R are outstanding, providing a fully programmable graphics language that surpasses most other statistical and graphical packages. The validity of the R software is ensured through openly validated and comprehensive governance as documented for the US Food and Drug Administration (R Foundation for Statistical Computing, 2008). 
+
+\item R is free and open source software, allowing anyone to use and, more importantly, to modify it. R is licensed under the GNU General Public License, with copyright held by The R Foundation for Statistical Computing.
+
+\item R has no license restrictions (other than ensuring our freedom to use it at our own discretion), and so we can run it anywhere and at any time, and even sell it under the conditions of the license.
+
+\item Anyone is welcome to provide bug fixes, code enhancements, and new packages, and the wealth of quality packages available for R is a testament to this approach to software development and sharing.
+
+\item R has over 4800 packages available from multiple repositories specializing in topics like econometric, data mining, spatial analysis, and bio-informatics.
+
+\item R is cross-platform. R runs on many operating systems and different hardware. It is popularly used on GNU/Linux, Macintosh, and Microsoft Windows, running on both 32 and 64 bit processors.
+
+\item R plays well with many other tools, importing data, for example, from CSV, SAS, and SPSS, or directly from Microsoft Excel, Microsoft Access, Oracle, MySQL, and Sq Lite. It can also produce graphics output in PDF, JPG, PNG, and SVG formats, and table output for LATEX and HTML.
+
+\item R has active user groups where questions can be asked and are often quickly responded to, often by the very people who developed the environment. Have you ever tried getting support from the core developers of a commercial vendor?
+
+\item New books for R (the Sp ringer Use R! series) are emerging, and there is now a very good library of books for using R.
+\end{itemize}
+
+\textbf{DISADVANTAGES}
+
+\begin{itemize}
+
+\item R has a steep learning curve, and may take time to get used to the power of R, but no steeper than for other statistical languages. R is not so easy to use for the novice. There are several simple-to use graphical user interfaces (GUI) for R that encompass point and-click interactions, but they generally do not have the polish of the commercial offerings.
+
+\item Documentation is sometimes patchy and terse, and impenetrable to the non-statistician. However, some very high-standard books are increasingly plugging the documentation gaps.
+
+\item The quality of some packages is less than perfect, although if a package is useful to many people, it will quickly evolve into a very robust product through collaborative efforts.
+
+\item There is, in general, no one to complain to if something doesn't work. R is a software application that many people freely devote their own time to developing. Problems are usually dealt with quickly on the open mailing lists, and bugs disappear with lightning speed. Users who do require it can purchase support from a number of vendors internationally.
+
+\item Many R commands give little thought to memory management, and so R can very quickly consume all available memory. This can be a restriction when doing data mining. There are various solutions, including using 64 bit operating systems that can access much more memory than 32 bit ones.
+\end{itemize}
+
+%%%%%
+\subsection{\LaTeX Advantages and Disadvantages}
+Why use LaTeX?
+The following section includes a post from www.latex template.com that provides a comprehensive list of advantages and disadvantages that we agree on.
+
+Advantages
+
+\begin{itemize}
+
+\item Quality and Aesthetics
+
+LaTeX produced documents just look better. This is a recipe created in Microsoft Word 2011 for Mac OS and this is the same text typeset with LaTeX. Both files were generated using default settings with the only deviation being centering in the Word version. It should be immediately obvious that the LaTeX version is superior. Through much deviation from default settings, it is of course possible to converge the styling of word processors and LaTeX. This is the result; while the differences may not immediately be seen, a detailed description of the typographical issues with the two word processor versions can be found here.
+
+The reason that LaTeX looks more refined and polished is that it is uses iterative typesetting algorithms which determine the optimal layout based on many typographical rules. Word processors are not written to typeset (i.e. determine the optimum position of characters/words) documents on the fly.
+
+\item Price
+
+\item Free; mulch-platform.
+
+It is difficult to ignore Microsoft Word and Apple's Pages as the two main word processors available. Both cost money, have compatibility issues between platforms and either aren't available on all platforms or require additional licenses. There are many free open source alternatives (such as Interoffice), but even these have compatibility issues.
+
+LaTeX is free with a multitude of front-ends to choose from for each platform. If you create a .Tex file on Windows at work and go home to your i Mac running Mac OS, the file will compile the same regardless. Since LaTeX itself does not get updated very frequently, you are unlikely to run into version errors.
+
+Another consideration is the bibliography manager. For the word processors that are capable of including bibliographies automatically, this software is usually an extra expense (e.g. EndNote for Microsoft Word). The LaTeX implementation of a bibliography manager (called BibTeX) uses any number of free reference managers to store your papers and saves the library as a .bib file which is read by LaTeX.
+
+\item Editing and Output
+
+A .Tex file is just a text document. This means it can be opened and edited in any simple text editor on any version of any operating system. It will not crash or corrupt for seemingly no reason. Many people feel this is liberating and enjoy being in control of their documents. Word processors can seem slow and bloated but few computers will find a text editor a daunting application to run.
+
+The output from LaTeX by default is DVI which is readily (and automatically) converted to PDF. The PDF format is used extensively in academia and can be view on any platform without formatting differences. Along with PDF, you can output to PostScript, RTF, HTML, PNG, TIFF and others.
+
+\item Focus on Content
+
+LaTeX separates content and style. What you see in your .tex file is not what you get as the output. While this makes things more confusing for those that haven't used LaTeX before, it is actually liberating in that the structure of the document is set once and the content falls into place when the document is compiled. The document content is written without any worries about the final look of it, if, for example, a footnote is required it is simply written into a \footnote{} tag and the writing process goes on. This also ensures consistency since all of the formatting is handled separately. This means if different paragraph indentation is required, this is specified with one line at the beginning of the document and is applied to the entire document.
+
+\item Time Investment
+
+There is no doubt that LaTeX requires an investment of time in order to learn how it works and how to use it. The key word here, however, is investment. In a word processor time spent trying to achieve a certain formatting task is essentially time wasted. It is unlikely the same problem will arise again. In LaTeX, once you figure out how to create a table or change the line spacing, you now effectively know how to do this and it becomes quite natural given some repetition. Each new task builds on top of previous knowledge to make the process even easier.
+
+Longevity is another benefit of LaTeX. Documents written 20 years ago in LaTeX are just as usable and customizable as those produced today. Compare this with a document produced using a word processor from 20 years ago, it is likely the software no longer exists and if it does it has undergone so many changes that it may not display the document correctly.
+
+\textbf{Downsides of LaTeX}
+
+\item Learning curve
+
+For those with little experience beyond point and click interfaces on a computer, LaTeX represents a learning curve that needs to be conquered in order to effectively create documents. This may take differing amounts of time based on previous exposure to programming or command line operations. Time is often a luxury in a professional or academic setting, so it is one of the aims of this website to help ease new LaTeX users into the system by providing ready-made templates which can effectively be filled in by a novice.
+
+\item Difficulty in collaborating
+
+Since LaTeX outputs PDF files which are essentially read-only, it can be difficult collaborating with another person on a document. In an academic situation where a PhD student may regularly need documents checked by a supervisor, this will require workarounds. The easiest is to use PDF annotation built into Mac OS, Adobe Acrobat and other software, but this can be slightly more cumbersome than the automatic 'Track Changes' implemented in Microsoft Word. Another option is to print the document and make annotations by hand. If a collaborator requests a document as a Word file, this represents further problems since both a PDF and LaTeX code are not easily translated to plain text and formatting will not be retained.
+
+\item Customization
+\\Customizing a document in LaTeX can be a finicky process. The default settings have been optimized for creating beautiful documents but when a change from the default is required, it often takes more effort to determine how to make a change than it does in a word processor. While it is not incredibly difficult, it requires a willingness to learn new commands and search for answers. Templates can help because advanced customization is not required, the layout has already been optimally configured in the template so the user can focus on content instead of worrying how to customize the layout.
+
+\item Changes visualization
+\\In a word processor, when a change is made, it is immediately obvious what has been changed. In LaTeX, every change can only be seen after the document is compiled. This means LaTeX does not provide the immediate feedback that a word processor does, which adds another layer between the user and the document. Some may find this frustrating but it ties in with the point above about the separation of content and style. 
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{/media/truecrypt2/ORP2/SISVANAF_PR/References/Sisvanaf.bib}
+%\bibliography{/Users/Jarymar/Dropbox/Outcome Project_JA/References/Sisvanaf_JAedit01_20_14.bib}
+\end{document}
